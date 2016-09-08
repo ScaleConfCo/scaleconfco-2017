@@ -17,12 +17,10 @@ export default class Hero extends Component {
 
   render() {
     return (
-      <div id="particles-js">
-        <div className={ styles.container }>
-          <header className={ styles.header }>
-            { "Scale Conf" }
-          </header>
-        </div>
+      <div id="particles-js" className={ styles.container }>
+        <header className={ styles.header }>
+          { "Scale Conf" }
+        </header>
       </div>
     )
   }

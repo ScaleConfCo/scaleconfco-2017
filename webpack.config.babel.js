@@ -4,7 +4,7 @@ import webpack from "webpack"
 import ExtractTextPlugin from "extract-text-webpack-plugin"
 import { phenomicLoader } from "phenomic"
 
-// import siteConfig from "./web_modules/config/index"
+import siteConfig from "./web_modules/config/index.babel.js"
 import pkg from "./package.json"
 
 // note that this webpack file is exporting a "makeConfig" function
@@ -157,8 +157,7 @@ export const makeConfig = (config = {}) => {
         features: {
           customProperties: {
             variables: {
-              green: 'green',
-              blue: 'blue'
+              ...siteConfig.colors
             }
           }
         }

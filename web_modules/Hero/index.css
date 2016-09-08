@@ -6,6 +6,11 @@
 
 .header {
   color: #fff;
-  font-size: 50px;
+  font-size: 60px;
   text-transform: uppercase;
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  width: 200px;
+  line-height: 1;
 }
