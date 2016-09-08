@@ -1,0 +1,11 @@
+.container {
+  height: 400px;
+  background-image: linear-gradient(to right, var(--green) 0%, var(--blue) 100%);
+  position: relative;
+}
+
+.header {
+  color: #fff;
+  font-size: 50px;
+  text-transform: uppercase;
+}
