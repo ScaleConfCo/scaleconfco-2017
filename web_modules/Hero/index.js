@@ -15,7 +15,7 @@ export default class Hero extends Component {
     return (
       <div id="particles-js" className={ styles.container }>
         <header className={ styles.header }>
-          { "Scale Conf" }
+          { "Scale Conf Colombia" }
         </header>
       </div>
     )
