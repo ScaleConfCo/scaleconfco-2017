@@ -1,13 +1,9 @@
-import React, { Component, PropTypes } from "react"
+import React, { Component } from "react"
 import particles from "particles.js"
 
 import styles from "./index.css"
 
 export default class Hero extends Component {
-
-  static contextTypes = {
-    metadata: PropTypes.object.isRequired,
-  };
 
   componentDidMount() {
     particles.particlesJS.load("particles-js", "assets/particles.json", function() {

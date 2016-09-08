@@ -2,7 +2,8 @@
   "private": true,
   "name": "site",
   "homepage": "https://scaleconf.co",
-  "twitter": "scaleconf",
+  "twitter": "scaleconfco",
+  "facebook": "scaleconfco",
   "repository": "",
   "scripts": {
     "lint:js": "eslint --ignore-path .gitignore --fix .",
