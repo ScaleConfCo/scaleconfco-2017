@@ -1,13 +1,13 @@
-import React, { Component } from "react"
-import Helmet from "react-helmet"
-import TopBarProgressIndicator from "react-topbar-progress-indicator"
+import React, { Component } from 'react'
+import Helmet from 'react-helmet'
+import TopBarProgressIndicator from 'react-topbar-progress-indicator'
 
-import styles from "./index.css"
+import styles from './index.css'
 
 TopBarProgressIndicator.config({
   barColors: {
-    "0": "#fff",
-    "1.0": "#fff",
+    '0': '#fff',
+    '1.0': '#fff',
   },
   shadowBlur: 5,
 })

@@ -1,9 +1,9 @@
-import React, { Component, PropTypes } from "react"
-import Svg from "react-svg-inline"
+import React, { Component, PropTypes } from 'react'
+import Svg from 'react-svg-inline'
 
-import styles from "./index.css"
-import twitterSvg from "../../assets/icons/iconmonstr-twitter-1.svg"
-import facebookSvg from "../../assets/icons/iconmonstr-facebook-1.svg"
+import styles from './index.css'
+import twitterSvg from '../../assets/icons/iconmonstr-twitter-1.svg'
+import facebookSvg from '../../assets/icons/iconmonstr-facebook-1.svg'
 
 export default class SocialIcons extends Component {
 

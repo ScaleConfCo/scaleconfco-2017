@@ -1,5 +1,5 @@
-import React, { PropTypes } from "react"
-import { Link } from "react-router"
+import React, { PropTypes } from 'react'
+import { Link } from 'react-router'
 
 const PagePreview = ({ __url, title, date }) => {
   const pageDate = date ? new Date(date) : null

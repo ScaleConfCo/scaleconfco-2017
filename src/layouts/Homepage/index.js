@@ -1,8 +1,8 @@
-import React, { Component, PropTypes } from "react"
-import enhanceCollection from "phenomic/lib/enhance-collection"
+import React, { Component, PropTypes } from 'react'
+import enhanceCollection from 'phenomic/lib/enhance-collection'
 
-import Page from "../Page"
-import PagesList from "../../fragments/PagesList"
+import Page from '../Page'
+import PagesList from '../../fragments/PagesList'
 
 const numberOfLatestPosts = 6
 
@@ -13,8 +13,8 @@ export default class Homepage extends Component {
 
   render() {
     const latestPosts = enhanceCollection(this.context.collection, {
-      filter: { layout: "Post" },
-      sort: "date",
+      filter: { layout: 'Post' },
+      sort: 'date',
       reverse: true,
     })
     .slice(0, numberOfLatestPosts)

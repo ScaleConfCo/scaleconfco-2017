@@ -1,5 +1,5 @@
-import React, { Component, PropTypes } from "react"
-import styles from "./index.css"
+import React, { Component, PropTypes } from 'react'
+import styles from './index.css'
 
 export default class PageError extends Component {
 
@@ -10,7 +10,7 @@ export default class PageError extends Component {
 
   static defaultProps = {
     error: 404,
-    errorText: "Page Not Found",
+    errorText: 'Page Not Found',
   };
 
   render() {

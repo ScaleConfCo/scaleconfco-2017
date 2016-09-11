@@ -41,7 +41,8 @@
       "max-len": [
         "error",
         120
-      ]
+      ],
+      "quotes": ["error", "single"]
     },
     "globals": {
       "particlesJS": true
