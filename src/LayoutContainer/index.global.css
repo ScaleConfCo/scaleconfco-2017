@@ -76,3 +76,39 @@ body {
 a {
   color: #0e63e3;
 }
+
+@font-face {
+  font-family: 'eausans_book';
+  src: url('../assets/fonts/eau_sans_book-webfont.eot');
+  src:
+    url('../assets/fonts/eau_sans_book-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/eau_sans_book-webfont.woff2') format('woff2'),
+    url('../assets/fonts/eau_sans_book-webfont.woff') format('woff'),
+    url('../assets/fonts/eau_sans_book-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'eausans_bold';
+  src: url('../assets/fonts/eau_sans_bold-webfont.eot');
+  src:
+    url('../assets/fonts/eau_sans_bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/eau_sans_bold-webfont.woff2') format('woff2'),
+    url('../assets/fonts/eau_sans_bold-webfont.woff') format('woff'),
+    url('../assets/fonts/eau_sans_bold-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'eausans_black';
+  src: url('../assets/fonts/eau_sans_black-webfont.eot');
+  src:
+    url('../assets/fonts/eau_sans_black-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/eau_sans_black-webfont.woff2') format('woff2'),
+    url('../assets/fonts/eau_sans_black-webfont.woff') format('woff'),
+    url('../assets/fonts/eau_sans_black-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

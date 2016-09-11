@@ -80,7 +80,7 @@ export const makeConfig = (config = {}) => {
           include: path.resolve(__dirname, "src"),
           loader: ExtractTextPlugin.extract(
             "style-loader",
-            [ "css-loader", "postcss-loader" ].join("!"),
+            [ "css-loader", "postcss-loader"].join("!"),
           ),
         },
         // ! \\
@@ -127,6 +127,10 @@ export const makeConfig = (config = {}) => {
           test: /particles\.js/,
           loader: 'exports?particlesJS=window.particlesJS,pJSDom=window.pJSDom'
         },
+        {
+          test: /\.(png|woff|woff2|eot|ttf)$/,
+          loader: 'url-loader?limit=100000'
+        }
       ],
     },
 
