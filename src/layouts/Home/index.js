@@ -1,8 +1,7 @@
 import React, { Component, PropTypes } from "react"
 
-import Suscription from "../../Suscription"
-import SocialIcons from "../../SocialIcons"
-import Page from "../Page"
+import Suscription from "../../components/Suscription"
+import SocialIcons from "../../components/SocialIcons"
 
 export default class Homepage extends Component {
   static contextTypes = {
@@ -12,10 +11,10 @@ export default class Homepage extends Component {
   render() {
 
     return (
-      <Page { ...this.props }>
+      <div>
         <Suscription />
         <SocialIcons />
-      </Page>
+      </div>
     )
   }
 }

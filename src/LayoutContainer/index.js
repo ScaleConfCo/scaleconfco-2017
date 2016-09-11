@@ -5,8 +5,8 @@ import Helmet from "react-helmet"
 import "./index.global.css"
 import styles from "./index.css"
 
-import Footer from "../Footer"
-import Hero from "../Hero"
+import Footer from "../fragments/Footer"
+import Hero from "../fragments/Hero"
 
 export default class Layout extends Component {
 

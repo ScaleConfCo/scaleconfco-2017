@@ -4,7 +4,7 @@ import webpack from "webpack"
 import ExtractTextPlugin from "extract-text-webpack-plugin"
 import { phenomicLoader } from "phenomic"
 
-import siteConfig from "./src/config/index.babel.js"
+import siteConfig from "./src/app/variables.babel.js"
 import pkg from "./package.json"
 
 // note that this webpack file is exporting a "makeConfig" function
