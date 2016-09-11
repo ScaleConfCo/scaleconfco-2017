@@ -4,7 +4,6 @@ import webpack from "webpack"
 import ExtractTextPlugin from "extract-text-webpack-plugin"
 import { phenomicLoader } from "phenomic"
 
-import siteConfig from "./src/app/variables.babel.js"
 import pkg from "./package.json"
 
 // note that this webpack file is exporting a "makeConfig" function
@@ -157,16 +156,17 @@ export const makeConfig = (config = {}) => {
     postcss: () => [
       require("stylelint")(),
       require("postcss-cssnext")({
-        browsers: "last 2 versions",
-        features: {
-          customProperties: {
-            variables: {
-              ...siteConfig.colors
-            }
-          }
-        }
+        browsers: "last 2 versions"
       }),
       require("postcss-reporter")(),
+      require('postcss-simple-vars')({
+        variables: function variables () {
+          return require('./src/app/variables.babel.js').default;
+        },
+        unknown: function unknown (node, name, result) {
+          node.warn(result, 'Unknown variable ' + name)
+        }
+      }),
       ...!config.production ? [
         require("postcss-browser-reporter")(),
       ] : [],

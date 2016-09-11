@@ -11,8 +11,10 @@ export default class Footer extends Component {
         <a
           href="/"
           className={ styles.link }
-        >{ `${String.fromCharCode(169)}` } <Title /> { "2017" }
+        >
+        <Title />
         </a>
+        <span className={ styles.separator }>{ `Colombia 2017 ${String.fromCharCode(169)}` }</span>
       </footer>
     )
   }
