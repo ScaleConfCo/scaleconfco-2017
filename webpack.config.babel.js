@@ -4,7 +4,7 @@ import webpack from "webpack"
 import ExtractTextPlugin from "extract-text-webpack-plugin"
 import { phenomicLoader } from "phenomic"
 
-import siteConfig from "./web_modules/config/index.babel.js"
+import siteConfig from "./src/config/index.babel.js"
 import pkg from "./package.json"
 
 // note that this webpack file is exporting a "makeConfig" function
@@ -50,7 +50,7 @@ export const makeConfig = (config = {}) => {
           ],
           include: [
             path.resolve(__dirname, "scripts"),
-            path.resolve(__dirname, "web_modules"),
+            path.resolve(__dirname, "src"),
           ],
         },
 
@@ -62,7 +62,7 @@ export const makeConfig = (config = {}) => {
         {
           test: /\.css$/,
           exclude: /\.global\.css$/,
-          include: path.resolve(__dirname, "web_modules"),
+          include: path.resolve(__dirname, "src"),
           loader: ExtractTextPlugin.extract(
             "style-loader",
             [ `css-loader?modules&localIdentName=${
@@ -77,7 +77,7 @@ export const makeConfig = (config = {}) => {
         // *.global.css => global (normal) css
         {
           test: /\.global\.css$/,
-          include: path.resolve(__dirname, "web_modules"),
+          include: path.resolve(__dirname, "src"),
           loader: ExtractTextPlugin.extract(
             "style-loader",
             [ "css-loader", "postcss-loader" ].join("!"),
