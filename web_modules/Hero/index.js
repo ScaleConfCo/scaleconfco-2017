@@ -1,12 +1,16 @@
 import React, { Component } from "react"
-import particles from "particles.js"
+
+let particles
+if (typeof window !== "undefined") {
+  particles = require("particles.js")
+}
 
 import styles from "./index.css"
 
 export default class Hero extends Component {
 
   componentDidMount() {
-    particles.particlesJS.load("particles-js", "assets/particles.json", function() {
+    particles && particles.particlesJS.load("particles-js", "assets/particles.json", function() {
       console.log("callback - particles.js config loaded")
     })
   }
