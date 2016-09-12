@@ -1,6 +1,9 @@
 .container {
-  margin-top: 10px;
-  text-align: center;
+  margin-top: 0;
+}
+
+svg {
+  fill: $blue;
 }
 
 .link {

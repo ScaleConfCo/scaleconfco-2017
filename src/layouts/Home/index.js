@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react'
 
 import Suscription from '../../components/Suscription'
-import SocialIcons from '../../components/SocialIcons'
+import Contact from '../../fragments/Contact'
 
 export default class Homepage extends Component {
   static contextTypes = {
@@ -13,7 +13,7 @@ export default class Homepage extends Component {
     return (
       <div>
         <Suscription />
-        <SocialIcons />
+        <Contact />
       </div>
     )
   }
