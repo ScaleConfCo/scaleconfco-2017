@@ -1,0 +1,31 @@
+.container {
+  color: $darkBlue;
+}
+
+.head {
+  display: flex;
+}
+
+.title {
+  font-family: $EausansBold;
+  font-size: 25px;
+  text-transform: uppercase;
+  margin: auto 20px;
+}
+
+.description {
+  font-family: $EausansBook;
+  font-size: 20px;
+}
+
+.emphasis {
+  font-family: $EausansBold;
+  color: $blue;
+}
+
+.emphasisTitle {
+  font-family: $EausansBold;
+  font-size: 20px;
+  color: $blue;
+  text-transform: uppercase;
+}

@@ -1,0 +1,10 @@
+.container {
+  color: inherit;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+.link {
+  text-transform: uppercase;
+  color: $white;
+}

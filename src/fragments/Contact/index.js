@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import SocialIcons from '../../components/SocialIcons'
+import SocialIcons from '../SocialIcons'
 
 import styles from './index.css'
 
