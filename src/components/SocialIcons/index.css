@@ -2,10 +2,6 @@
   margin-top: 0;
 }
 
-svg {
-  fill: $blue;
-}
-
 .link {
   text-decoration: none;
 }
