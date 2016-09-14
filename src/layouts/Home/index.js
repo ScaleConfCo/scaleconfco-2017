@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react'
 
 import Suscription from '../../components/Suscription'
 import Contact from '../../fragments/Contact'
-import Info from '../../fragments/Info'
+import Main from '../../fragments/Main'
 
 export default class Homepage extends Component {
   static contextTypes = {
@@ -14,8 +14,8 @@ export default class Homepage extends Component {
     return (
       <div>
         <Suscription />
+        <Main />
         <Contact />
-        <Info />
       </div>
     )
   }

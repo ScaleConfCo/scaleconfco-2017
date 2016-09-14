@@ -1,5 +1,7 @@
 .container {
   color: $darkBlue;
+  width: 50%;
+  position: relative;
 }
 
 .head {

@@ -1,10 +1,12 @@
 .container {
   color: inherit;
-  padding: 10px 15px;
-  width: 100%;
+  padding: 10px 20px;
+  display: inline-block;
 }
 
 .link {
+  font-size: 20px;
   text-transform: uppercase;
   color: $white;
+  text-decoration: none;
 }

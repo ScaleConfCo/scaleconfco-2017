@@ -4,9 +4,9 @@ import styles from './index.css'
 
 export default class Button extends Component {
   render() {
-    const { value, link, ...props } = this.props
+    const { value, link, style } = this.props
     return (
-      <div className={ styles.container } style={ props } >
+      <div className={ styles.container } style={ style } >
         <a
           href={ link }
           className={ styles.link }
@@ -21,5 +21,5 @@ export default class Button extends Component {
 Button.propTypes = {
   value: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
-  backgroundColor: PropTypes.string,
+  style: PropTypes.object,
 }
