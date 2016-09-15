@@ -17,7 +17,7 @@ export default class Main extends Component {
   getSponsorsDescription(className) {
     return (
       <span>
-        { 'Interested in sporsoring this event? Take a look at our ' }
+        { 'Interested in sponsoring this event? Take a look at our ' }
         <a
           href="https://example.com"
         >

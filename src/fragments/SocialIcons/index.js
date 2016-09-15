@@ -17,8 +17,8 @@ export default class SocialIcons extends Component {
 
     return (
       <div className={ styles.container }>
-        <Icon icon="twitter" link={ `https://twitter.com/${pkg.twitter}` } fill={ blue } />
-        <Icon icon="facebook" link={ `https://facebook.com/${pkg.facebook}` } fill={ blue } />
+        <Icon icon="twitter" link={ `https://twitter.com/${pkg.twitter}` } fill={ blue } width="40px" />
+        <Icon icon="facebook" link={ `https://facebook.com/${pkg.facebook}` } fill={ blue } width="40px" />
       </div>
     )
   }

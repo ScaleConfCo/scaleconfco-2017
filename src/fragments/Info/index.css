@@ -20,6 +20,12 @@
   font-size: 20px;
 }
 
+.description a {
+  text-decoration: none;
+  border-bottom: 1px solid $blue;
+  padding-bottom: 3px;
+}
+
 .emphasis {
   font-family: $EausansBold;
   color: $blue;

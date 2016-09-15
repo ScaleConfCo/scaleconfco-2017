@@ -1,7 +1,20 @@
 .container {
-  width: 50%;
+  font-family: $EausansBold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
 }
 
 .title {
+  font-size: 25px;
+  color: $darkBlue;
   text-transform: uppercase;
+}
+
+.link {
+  color: $blue;
+  font-size: 18px;
+  border-bottom: 1px solid $blue;
+  text-decoration: none;
 }

@@ -72,11 +72,6 @@ body {
   }
 }
 
-/* minimal styling, prefer removing this and use local styles */
-a {
-  color: #0e63e3;
-}
-
 .SVGInline {
   display: flex;
 }
