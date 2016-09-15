@@ -19,7 +19,7 @@ export default class Main extends Component {
       <span>
         { 'Interested in sponsoring this event? Take a look at our ' }
         <a
-          href="https://example.com"
+          href="assets/prospectus.pdf"
         >
           <span className={ className }>{ 'prospectus' }</span>
         </a>
@@ -36,7 +36,7 @@ export default class Main extends Component {
           description={ this.getAnnounceDescription }
           emphasis="Got something cool to share?"
           buttonText="Speak at Scaleconf Colombia"
-          buttonLink="https://example.com"
+          buttonLink="https://www.papercall.io/scaleconfco"
         />
         <Info
           icon="connect"
