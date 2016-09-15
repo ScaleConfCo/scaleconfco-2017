@@ -5,7 +5,7 @@
 }
 
 .header {
-  color: #fff;
+  color: $white;
   font-size: 60px;
   text-align: center;
   text-transform: uppercase;
@@ -14,4 +14,8 @@
   top: 50%;
   transform: translate(-50%, -50%);
   line-height: 1;
+
+  @media screen and (max-width: $breakpointsm) {
+    font-size: 50px;
+  }
 }
