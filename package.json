@@ -45,6 +45,12 @@
       "quotes": [
         "error",
         "single"
+      ],
+      "react/jsx-no-bind": [
+        "error",
+        {
+          "ignoreRefs": true
+        }
       ]
     },
     "globals": {

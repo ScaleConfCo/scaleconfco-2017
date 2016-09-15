@@ -7,6 +7,7 @@ import styles from './index.css'
 
 import Footer from '../fragments/Footer'
 import Hero from '../fragments/Hero'
+import Suscription from '../fragments/Suscription'
 
 export default class Layout extends Component {
 
@@ -47,6 +48,7 @@ export default class Layout extends Component {
         />
         <style>{ "@-ms-viewport { width: device-width; }" }</style>
         <Hero />
+        <Suscription />
         <div className={ styles.content }>
           { this.props.children }
         </div>
