@@ -17,12 +17,20 @@ const sizes = {
   footerHeight: '50px',
 }
 
+const breakpoints = {
+  breakpointsm: '544px',
+  breakpointmd: '768px',
+  breakpointlg: '992px',
+  breakpointxl: '1200px',
+}
+
 const gradient = `linear-gradient(to right, ${colors.green} 0%, ${colors.blue} 100%)`
 
 const config = {
   ...colors,
   ...sizes,
   ...fonts,
+  ...breakpoints,
   gradient,
 }
 

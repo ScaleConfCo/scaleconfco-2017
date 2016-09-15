@@ -6,9 +6,19 @@
   font-family: $EausansBook;
   font-size: 20px;
   text-transform: uppercase;
+  background-color: $blue;
   color: $white;
   text-decoration: none;
   display: block;
   padding: 10px 20px;
   letter-spacing: 1px;
+}
+
+.absolute {
+  position: absolute;
+  bottom: 0;
+
+  @media screen and (max-width: $breakpointsm) {
+    position: relative;
+  }
 }

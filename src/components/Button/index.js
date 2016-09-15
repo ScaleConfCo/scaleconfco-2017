@@ -1,15 +1,16 @@
 import React, { Component, PropTypes } from 'react'
+import cn from 'classnames'
 
 import styles from './index.css'
 
 export default class Button extends Component {
   render() {
-    const { value, link, style } = this.props
+    const { value, link, absolute } = this.props
     return (
-      <div className={ styles.container } style={ style } >
+      <div className={ styles.container } >
         <a
           href={ link }
-          className={ styles.link }
+          className={ cn(styles.link, { [styles.absolute]: absolute }) }
         >
           { value }
         </a>
@@ -21,5 +22,5 @@ export default class Button extends Component {
 Button.propTypes = {
   value: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
-  style: PropTypes.object,
+  absolute: PropTypes.bool,
 }

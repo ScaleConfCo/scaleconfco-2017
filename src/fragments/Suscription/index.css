@@ -23,6 +23,10 @@
   padding: 10px 15px;
   width: 450px;
   height: 50px;
+
+  @media screen and (max-width: $breakpointsm) {
+    width: 100%;
+  }
 }
 
 .submit {
@@ -34,4 +38,8 @@
   height: 50px;
   color: $white;
   padding: 10px 15px;
+
+  @media screen and (max-width: $breakpointsm) {
+    width: 100%;
+  }
 }

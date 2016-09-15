@@ -24,9 +24,7 @@ export default class Info extends Component {
       buttonLink,
     } = this.props
 
-    const defaultStyles = { backgroundColor: blue }
-
-    const buttonStyles = icon === 'connect' ? { ...defaultStyles, position: 'absolute', bottom: 0 } : defaultStyles
+    const absolute = icon === 'connect'
 
     return (
       <div className={ styles.container }>
@@ -44,7 +42,7 @@ export default class Info extends Component {
             { emphasis }
           </p>
         }
-        <Button value={ buttonText } link={ buttonLink } style={ buttonStyles } />
+        <Button value={ buttonText } link={ buttonLink } absolute={ absolute } />
       </div>
     )
   }
