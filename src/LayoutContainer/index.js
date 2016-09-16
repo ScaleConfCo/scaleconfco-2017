@@ -5,6 +5,8 @@ import Helmet from 'react-helmet'
 import './index.global.css'
 import styles from './index.css'
 
+import GATracker from '../components/GoogleAnalytics'
+
 import Footer from '../fragments/Footer'
 import Hero from '../fragments/Hero'
 import Suscription from '../fragments/Suscription'
@@ -13,6 +15,7 @@ export default class Layout extends Component {
 
   static propTypes = {
     children: PropTypes.oneOfType([ PropTypes.array, PropTypes.object ]),
+    params: PropTypes.object,
   };
 
   static contextTypes = {
@@ -47,12 +50,14 @@ export default class Layout extends Component {
           } ] }
         />
         <style>{ "@-ms-viewport { width: device-width; }" }</style>
-        <Hero />
-        <Suscription />
-        <div className={ styles.content }>
-          { this.props.children }
-        </div>
-        <Footer />
+        <GATracker params={ this.props.params }>
+          <Hero />
+          <Suscription />
+          <div className={ styles.content }>
+            { this.props.children }
+          </div>
+          <Footer />
+        </GATracker>
       </div>
     )
   }

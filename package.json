@@ -1,9 +1,10 @@
 {
   "private": true,
   "name": "site",
-  "homepage": "https://scaleconfco.github.io/scaleconfco-website/",
+  "homepage": "http://scaleconfco.com/",
   "twitter": "scaleconfco",
   "facebook": "scaleconfco",
+  "googleAnalyticsUA": "UA-84203198-1",
   "repository": "",
   "scripts": {
     "lint:js": "eslint --ignore-path .gitignore --fix .",
@@ -109,6 +110,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
-    "particles.js": "^2.0.0"
+    "particles.js": "^2.0.0",
+    "react-google-analytics": "^0.2.0"
   }
 }
