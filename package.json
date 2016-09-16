@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "site",
-  "homepage": "https://scaleconf.co",
+  "homepage": "https://scaleconf.com",
   "twitter": "scaleconfco",
   "facebook": "scaleconfco",
   "repository": "",
@@ -12,7 +12,8 @@
     "start": "phenomic start",
     "build": "phenomic build",
     "pretest": "npm run lint",
-    "test": "npm run build"
+    "test": "npm run build",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "phenomic": {
     "CNAME": true
@@ -79,6 +80,7 @@
     "exports-loader": "^0.6.3",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.1",
+    "gh-pages": "^0.11.0",
     "history": "^2.0.0",
     "invariant": "^2.1.1",
     "json-loader": "^0.5.2",
