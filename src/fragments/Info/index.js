@@ -51,7 +51,7 @@ export default class Info extends Component {
 Info.propTypes = {
   icon: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  description: PropTypes.Function,
+  description: PropTypes.func,
   emphasis: PropTypes.string,
   buttonText: PropTypes.string.isRequired,
   buttonLink: PropTypes.string.isRequired,
