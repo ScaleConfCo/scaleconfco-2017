@@ -1,4 +1,4 @@
-# [Phenomic](https://github.com/MoOx/phenomic) boilerplate
+# ScaleConfCo Website
 
 ## Install dependencies
 
@@ -17,3 +17,12 @@ npm start
 ```sh
 npm run build
 ```
+
+## Deploy
+
+```sh
+npm run deploy
+```
+
+
+Built with [Phenomic](https://github.com/MoOx/phenomic)
