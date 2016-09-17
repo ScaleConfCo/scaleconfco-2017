@@ -1,9 +1,12 @@
 .container {
-  font-family: $EausansBold;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
+}
+
+:global(.eausans_bold-loaded) .container {
+  font-family: $EausansBold;
 }
 
 .title {

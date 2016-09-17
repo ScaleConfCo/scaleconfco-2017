@@ -8,14 +8,12 @@
 }
 
 .title {
-  font-family: $EausansBold;
   font-size: 20px;
   text-transform: uppercase;
   margin-top: 0;
 }
 
 .input {
-  font-family: $EausansBold;
   font-size: 20px;
   background-color: $white;
   border-radius: 0;
@@ -30,7 +28,6 @@
 }
 
 .submit {
-  font-family: $EausansBold;
   font-size: 20px;
   background-color: $darkBlue;
   border-radius: 0;
@@ -42,4 +39,10 @@
   @media screen and (max-width: $breakpointsm) {
     width: 100%;
   }
+}
+
+:global(.eausans_bold-loaded) .title,
+:global(.eausans_bold-loaded) .input,
+:global(.eausans_bold-loaded) .submit {
+  font-family: $EausansBold;
 }

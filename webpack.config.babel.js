@@ -1,10 +1,10 @@
-import path from "path"
+import path from 'path'
 
-import webpack from "webpack"
-import ExtractTextPlugin from "extract-text-webpack-plugin"
-import { phenomicLoader } from "phenomic"
+import webpack from 'webpack'
+import ExtractTextPlugin from 'extract-text-webpack-plugin'
+import { phenomicLoader } from 'phenomic'
 
-import pkg from "./package.json"
+import pkg from './package.json'
 
 // note that this webpack file is exporting a "makeConfig" function
 // which is used for phenomic to build dynamic configuration based on your needs
@@ -13,7 +13,7 @@ import pkg from "./package.json"
 export const makeConfig = (config = {}) => {
   return {
     ...config.dev && {
-      devtool: "#cheap-module-eval-source-map",
+      devtool: '#cheap-module-eval-source-map',
     },
     module: {
       noParse: /\.min\.js/,
@@ -33,7 +33,7 @@ export const makeConfig = (config = {}) => {
         // (not handled by webpack by default)
         {
           test: /\.json$/,
-          loader: "json-loader",
+          loader: 'json-loader',
         },
 
         // *.js => babel + eslint
@@ -42,14 +42,14 @@ export const makeConfig = (config = {}) => {
           loaders: [
             `babel-loader${
               config.dev
-              ? "?cacheDirectory=true&presets[]=babel-preset-react-hmre"
-              : "?cacheDirectory=true"
+              ? '?cacheDirectory=true&presets[]=babel-preset-react-hmre'
+              : '?cacheDirectory=true'
             }`,
-            "eslint-loader?fix",
+            'eslint-loader?fix',
           ],
           include: [
-            path.resolve(__dirname, "scripts"),
-            path.resolve(__dirname, "src"),
+            path.resolve(__dirname, 'scripts'),
+            path.resolve(__dirname, 'src'),
           ],
         },
 
@@ -61,25 +61,25 @@ export const makeConfig = (config = {}) => {
         {
           test: /\.css$/,
           exclude: /\.global\.css$/,
-          include: path.resolve(__dirname, "src"),
+          include: path.resolve(__dirname, 'src'),
           loader: ExtractTextPlugin.extract(
-            "style-loader",
+            'style-loader',
             [ `css-loader?modules&localIdentName=${
                 config.production
-                ? "[hash:base64:5]"
-                : "[path][name]--[local]--[hash:base64:5]"
+                ? '[hash:base64:5]'
+                : '[path][name]--[local]--[hash:base64:5]'
               }`,
-              "postcss-loader",
-            ].join("!"),
+              'postcss-loader',
+            ].join('!'),
           ),
         },
         // *.global.css => global (normal) css
         {
           test: /\.global\.css$/,
-          include: path.resolve(__dirname, "src"),
+          include: path.resolve(__dirname, 'src'),
           loader: ExtractTextPlugin.extract(
-            "style-loader",
-            [ "css-loader", "postcss-loader"].join("!"),
+            'style-loader',
+            [ 'css-loader', 'postcss-loader' ].join('!'),
           ),
         },
         // ! \\
@@ -112,24 +112,24 @@ export const makeConfig = (config = {}) => {
         // copy assets and return generated path in js
         {
           test: /\.(html|ico|jpe?g|png|gif)$/,
-          loader: "file-loader" +
-            "?name=[path][name].[hash].[ext]&context=" +
+          loader: 'file-loader' +
+            '?name=[path][name].[hash].[ext]&context=' +
             path.join(__dirname, config.source),
         },
 
         // svg as raw string to be inlined
         {
           test: /\.svg$/,
-          loader: "raw-loader",
+          loader: 'raw-loader',
         },
         {
           test: /particles\.js/,
-          loader: 'exports?particlesJS=window.particlesJS,pJSDom=window.pJSDom'
+          loader: 'exports?particlesJS=window.particlesJS,pJSDom=window.pJSDom',
         },
         {
           test: /\.(png|woff|woff2|eot|ttf)$/,
-          loader: 'url-loader?limit=100000'
-        }
+          loader: 'url-loader?limit=100000',
+        },
       ],
     },
 
@@ -142,10 +142,10 @@ export const makeConfig = (config = {}) => {
         site_url: pkg.homepage,
       },
       feeds: {
-        "feed.xml": {
+        'feed.xml': {
           collectionOptions: {
-            filter: { layout: "Post" },
-            sort: "date",
+            filter: { layout: 'Post' },
+            sort: 'date',
             reverse: true,
             limit: 20,
           },
@@ -154,26 +154,26 @@ export const makeConfig = (config = {}) => {
     },
 
     postcss: () => [
-      require("stylelint")(),
-      require("postcss-cssnext")({
-        browsers: "last 2 versions"
+      require('stylelint')(),
+      require('postcss-cssnext')({
+        browsers: 'last 2 versions',
       }),
-      require("postcss-reporter")(),
+      require('postcss-reporter')(),
       require('postcss-simple-vars')({
-        variables: function variables () {
-          return require('./src/app/variables.babel.js').default;
+        variables: function variables() {
+          return require('./src/app/variables.babel.js').default
         },
-        unknown: function unknown (node, name, result) {
+        unknown: function unknown(node, name, result) {
           node.warn(result, 'Unknown variable ' + name)
-        }
+        },
       }),
       ...!config.production ? [
-        require("postcss-browser-reporter")(),
+        require('postcss-browser-reporter')(),
       ] : [],
     ],
 
     plugins: [
-      new ExtractTextPlugin("[name].[hash].css", { disable: config.dev }),
+      new ExtractTextPlugin('[name].[hash].css', { disable: config.dev }),
       ...config.production && [
         new webpack.optimize.DedupePlugin(),
         new webpack.optimize.UglifyJsPlugin(
@@ -185,14 +185,14 @@ export const makeConfig = (config = {}) => {
     output: {
       path: path.join(__dirname, config.destination),
       publicPath: config.baseUrl.pathname,
-      filename: "[name].[hash].js",
+      filename: '[name].[hash].js',
     },
 
     resolve: {
-      extensions: [ ".js", ".json", "" ],
-      root: [ path.join(__dirname, "node_modules") ],
+      extensions: [ '.js', '.json', '' ],
+      root: [ path.join(__dirname, 'node_modules') ],
     },
-    resolveLoader: { root: [ path.join(__dirname, "node_modules") ] },
+    resolveLoader: { root: [ path.join(__dirname, 'node_modules') ] },
   }
 }
 

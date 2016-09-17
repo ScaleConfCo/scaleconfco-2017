@@ -14,14 +14,12 @@
 }
 
 .title {
-  font-family: $EausansBold;
   font-size: 25px;
   text-transform: uppercase;
   margin: auto 20px;
 }
 
 .description {
-  font-family: $EausansBook;
   font-size: 20px;
 }
 
@@ -32,13 +30,21 @@
 }
 
 .emphasis {
-  font-family: $EausansBold;
   color: $blue;
 }
 
 .emphasisTitle {
-  font-family: $EausansBold;
   font-size: 20px;
   color: $blue;
   text-transform: uppercase;
+}
+
+:global(.eausans_bold-loaded) .title,
+:global(.eausans_bold-loaded) .emphasis,
+:global(.eausans_bold-loaded) .emphasisTitle {
+  font-family: $EausansBold;
+}
+
+:global(.eausans_book-loaded) .description {
+  font-family: $EausansBook;
 }

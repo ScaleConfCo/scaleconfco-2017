@@ -62,7 +62,15 @@
   },
   "eslintConfigRuleReact/prefer-stateless-function": "https://github.com/MoOx/phenomic/issues/46",
   "stylelint": {
-    "extends": "stylelint-config-standard"
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "selector-pseudo-class-no-unknown": [
+        true,
+        {
+          "ignorePseudoClasses": ["global"]
+        }
+      ]
+    }
   },
   "devDependencies": {
     "babel-cli": "^6.3.17",
@@ -111,6 +119,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
+    "fontfaceobserver": "^2.0.4",
     "particles.js": "^2.0.0",
     "react-google-analytics": "^0.2.0"
   }

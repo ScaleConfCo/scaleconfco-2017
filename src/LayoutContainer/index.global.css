@@ -103,15 +103,3 @@ body {
   font-weight: normal;
   font-style: normal;
 }
-
-@font-face {
-  font-family: 'eausans_black';
-  src: url('../assets/fonts/eau_sans_black-webfont.eot');
-  src:
-    url('../assets/fonts/eau_sans_black-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../assets/fonts/eau_sans_black-webfont.woff2') format('woff2'),
-    url('../assets/fonts/eau_sans_black-webfont.woff') format('woff'),
-    url('../assets/fonts/eau_sans_black-webfont.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}

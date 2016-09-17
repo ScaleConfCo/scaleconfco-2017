@@ -3,7 +3,6 @@
 }
 
 .link {
-  font-family: $EausansBook;
   font-size: 20px;
   text-transform: uppercase;
   background-color: $blue;
@@ -12,6 +11,10 @@
   display: block;
   padding: 10px 20px;
   letter-spacing: 1px;
+}
+
+:global(.eausans_book-loaded) .link {
+  font-family: $EausansBook;
 }
 
 .absolute {

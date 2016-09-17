@@ -11,6 +11,25 @@ import Footer from '../fragments/Footer'
 import Hero from '../fragments/Hero'
 import Suscription from '../fragments/Suscription'
 
+if (typeof window !== 'undefined') {
+  const FontFaceObserver = require('fontfaceobserver')
+
+  const EausansBookObserver = new FontFaceObserver('eausans_book', {})
+  const EausansBoldObserver = new FontFaceObserver('eausans_bold', {})
+
+  EausansBookObserver.load().then(() => {
+    document.body.classList.add('eausans_book-loaded')
+  }, () => {
+    document.body.classList.remove('eausans_book-loaded')
+  })
+
+  EausansBoldObserver.load().then(() => {
+    document.body.classList.add('eausans_bold-loaded')
+  }, () => {
+    document.body.classList.remove('eausans_bold-loaded')
+  })
+}
+
 export default class Layout extends Component {
 
   static propTypes = {

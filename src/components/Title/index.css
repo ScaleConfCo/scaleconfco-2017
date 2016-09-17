@@ -2,10 +2,10 @@
   color: inherit;
 }
 
-.scale {
-  font-family: 'eausans_bold';
+:global(.eausans_bold-loaded) .scale {
+  font-family: $EausansBold;
 }
 
-.conf {
-  font-family: 'eausans_book';
+:global(.eausans_book-loaded) .conf {
+  font-family: $EausansBook;
 }
