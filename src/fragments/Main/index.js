@@ -19,7 +19,7 @@ export default class Main extends Component {
       <span>
         { 'Interested in sponsoring this event? Take a look at our ' }
         <a
-          href="assets/prospectus.pdf"
+          href="mailto:hola@scaleconfco.com"
         >
           <span className={ className }>{ 'prospectus' }</span>
         </a>
