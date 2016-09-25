@@ -19,7 +19,7 @@ export default class Main extends Component {
       <span>
         { 'Interested in sponsoring this event? Take a look at our ' }
         <a
-          href="mailto:hola@scaleconfco.com"
+          href="mailto:hola@scaleconfco.com?subject=I%20wanna%20sponsor%20ScaleConf%20Colombia!"
         >
           <span className={ className }>{ 'prospectus' }</span>
         </a>
@@ -43,7 +43,7 @@ export default class Main extends Component {
           title="Sponsors"
           description={ this.getSponsorsDescription }
           buttonText="Sponsor Scaleconf Colombia"
-          buttonLink="https://example.com"
+          buttonLink="mailto:hola@Scaleconfco.com?subject=I%20wanna%20sponsor%20ScaleConf%20Colombia!"
         />
       </div>
     )
