@@ -43,7 +43,7 @@ export default class Main extends Component {
           title="Sponsors"
           description={ this.getSponsorsDescription }
           buttonText="Sponsor Scaleconf Colombia"
-          buttonLink="mailto:hola@Scaleconfco.com?subject=I%20wanna%20sponsor%20ScaleConf%20Colombia!"
+          buttonLink="mailto:hola@scaleconfco.com?subject=I%20wanna%20sponsor%20ScaleConf%20Colombia!"
         />
       </div>
     )
