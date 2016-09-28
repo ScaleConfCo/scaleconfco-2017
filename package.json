@@ -67,7 +67,9 @@
       "selector-pseudo-class-no-unknown": [
         true,
         {
-          "ignorePseudoClasses": ["global"]
+          "ignorePseudoClasses": [
+            "global"
+          ]
         }
       ]
     }
@@ -91,6 +93,7 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.1",
     "gh-pages": "^0.11.0",
+    "graceful-fs": "^4.1.6",
     "history": "^2.0.0",
     "invariant": "^2.1.1",
     "json-loader": "^0.5.2",
@@ -110,6 +113,7 @@
     "react-svg-inline": "^1.1.0",
     "react-topbar-progress-indicator": "^1.0.0",
     "redux": "^3.0.0",
+    "source-map-support": "^0.4.2",
     "style-loader": "^0.12.3",
     "stylelint": "^6.8.0",
     "stylelint-config-standard": "^10.0.0",
