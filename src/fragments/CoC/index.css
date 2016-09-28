@@ -1,0 +1,29 @@
+.container {
+  font-size: 18px;
+  text-align: center;
+  max-width: 50%;
+  margin: 80px auto;
+
+  @media screen and (max-width: $breakpointsm) {
+    max-width: 100%;
+  }
+}
+
+.description {
+  color: $darkBlue;
+}
+
+:global(.eausans_book-loaded) .description {
+  font-family: $EausansBook;
+}
+
+.link {
+  color: $blue;
+  text-decoration: none;
+  border-bottom: 1px solid $blue;
+  padding-bottom: 3px;
+}
+
+:global(.eausans_bold-loaded) .link {
+  font-family: $EausansBold;
+}

@@ -22,7 +22,12 @@ export default class Hero extends Component {
       <div id="particles-js" className={ styles.container }>
         <header className={ styles.header }>
           <Title />
-          { "Colombia" }
+          <p className={ styles.title }>
+            { 'Colombia' }
+          </p>
+          <p className={ styles.date }>
+            { "March 25 2017 " }
+          </p>
         </header>
       </div>
     )

@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 
 import Contact from '../../fragments/Contact'
 import Main from '../../fragments/Main'
+import CoC from '../../fragments/CoC'
 
 export default class Homepage extends Component {
   static contextTypes = {
@@ -20,6 +21,7 @@ export default class Homepage extends Component {
           title={ pkg.homepageTitle }
         />
         <Main />
+        <CoC />
         <Contact />
       </div>
     )
