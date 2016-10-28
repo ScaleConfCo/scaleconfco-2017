@@ -10,6 +10,7 @@ import PageLoading from '../layouts/PageLoading'
 import Homepage from '../layouts/Homepage'
 import Home from '../layouts/Home'
 import Post from '../layouts/Post'
+import CFPRedirect from '../components/CFPRedirect'
 
 class PageContainer extends Component {
   render() {
@@ -32,6 +33,7 @@ class PageContainer extends Component {
 
 export default (
   <Route component={ LayoutContainer }>
+    <Route path="/cfp" component={ CFPRedirect } />
     <Route path="*" component={ PageContainer } />
   </Route>
 )
