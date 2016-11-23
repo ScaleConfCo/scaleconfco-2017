@@ -1,13 +1,8 @@
-import metadata from '../src/app/metadata'
-import routes from '../src/app/routes'
-import store from '../src/app/store'
+import phenomicStatic from "phenomic/lib/static"
 
-import phenomicStatic from 'phenomic/lib/static'
+import metadata from "../src/metadata.js"
+import routes from "../src/routes.js"
+import store from "../src/store.js"
 
 module.exports = (options) =>
-  phenomicStatic({
-    ...options,
-    metadata,
-    routes,
-    store,
-  })
+  phenomicStatic({ ...options, metadata, routes, store })

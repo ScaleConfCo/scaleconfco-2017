@@ -1,0 +1,53 @@
+@import "~tachyons";
+
+:root {
+  --green: #42E6AA;
+  --green1: #34BF86;
+  --green2: #128571;
+  --blue: #249EEA;
+  --blue1: #0D3B56;
+}
+
+.gradient {
+  background-image: linear-gradient(to right, var(--green) 0%, var(--blue) 100%);
+}
+
+.green1 {
+  color: var(--green1);
+}
+
+.green2 {
+  color: var(--green2);
+}
+
+.blue {
+  color: var(--blue);
+}
+
+.bg-blue {
+  background-color: var(--blue); 
+}
+
+.b--blue {
+  border-color: var(--blue);
+}
+
+.bg-blue1 {
+  background-color: var(--blue1);
+}
+
+.fl-blue {
+  fill: var(--blue);
+}
+
+.mw17 {
+  max-width: 17rem;
+}
+
+.mw80 {
+  max-width: 80rem;
+}
+
+.SVGInline {
+  display: flex;
+}

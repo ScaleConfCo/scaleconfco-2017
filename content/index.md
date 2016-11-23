@@ -1,6 +1,4 @@
 ---
 title: ScaleConf Colombia
-layout: Home
+layout: Homepage
 ---
-
-Hola a todos!

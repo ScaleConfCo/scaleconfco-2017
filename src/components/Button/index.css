@@ -1,27 +1,48 @@
-.container {
-  display: inline-block;
-}
+.button {
+  display: inline-flex;
+  padding: 0 1rem;
+  line-height: 2rem;
+  font-weight: 100;
+  text-align: center;
+  border-radius: 3px;
 
-.link {
-  font-size: 20px;
-  text-transform: uppercase;
-  background-color: $blue;
-  color: $white;
-  text-decoration: none;
-  display: block;
-  padding: 10px 20px;
-  letter-spacing: 1px;
-}
+  transition: .2s all;
 
-:global(.eausans_book-loaded) .link {
-  font-family: $EausansBook;
-}
+  color: var(--colorPrimary);
+  border: 1px solid var(--colorPrimary);
+  background: color(var(--colorNeutralLight) a(0.2));
 
-.absolute {
-  position: absolute;
-  bottom: 0;
-
-  @media screen and (max-width: $breakpointsm) {
-    position: relative;
+  &:hover {
+    text-decoration: none;
+    color: var(--colorPrimaryDark);
+    border: 1px solid var(--colorPrimaryDark);
   }
+}
+
+.secondary {
+  color: var(--colorSecondary);
+  border: 1px solid var(--colorSecondary);
+
+  &:hover {
+    color: var(--colorSecondaryDark);
+    border: 1px solid var(--colorSecondaryDark);
+  }
+}
+
+.light {
+  color: var(--colorNeutralLight);
+  border: 1px solid var(--colorNeutralLight);
+
+  &:hover {
+    color: var(--colorNeutralLight);
+    border: 1px solid var(--colorNeutralLight);
+    background: color(var(--colorNeutralLight) a(0.3));
+  }
+}
+
+
+.big {
+  font-size: 1.5rem;
+  padding: 0 2rem;
+  line-height: 3rem;
 }

@@ -1,4 +1,4 @@
-# ScaleConfCo Website
+# [Phenomic](https://github.com/MoOx/phenomic) phenomic-theme-base
 
 ## Install dependencies
 
@@ -17,12 +17,3 @@ npm start
 ```sh
 npm run build
 ```
-
-## Deploy
-
-```sh
-npm run deploy
-```
-
-
-Built with [Phenomic](https://github.com/MoOx/phenomic)

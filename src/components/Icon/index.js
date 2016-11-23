@@ -5,8 +5,6 @@ import FacebookIcon from '../../assets/icons/iconmonstr-facebook-4.svg'
 import AnnounceIcon from '../../assets/icons/announce.svg'
 import ConnectIcon from '../../assets/icons/connect.svg'
 
-import styles from './index.css'
-
 const icons = {
   twitter: TwitterIcon,
   facebook: FacebookIcon,
@@ -18,14 +16,15 @@ export default class Icon extends Component {
   renderIcon(icon, props) {
     return <Svg svg={ icons[icon] } {...props} />
   }
+  
   render() {
     const { icon, link, ...props } = this.props
     return (
-      <div className={ styles.container }>
+      <div>
         { link ?
           <a
             href={ link }
-            className={ styles.link }
+            className="no-underline"
           >
             { this.renderIcon(icon, props) }
           </a> :

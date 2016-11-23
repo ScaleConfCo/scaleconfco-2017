@@ -1,8 +1,0 @@
-.container {
-  display: flex;
-  margin-top: 80px;
-
-  @media screen and (max-width: $breakpointsm) {
-    flex-direction: column;
-  }
-}

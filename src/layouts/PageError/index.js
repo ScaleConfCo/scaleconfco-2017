@@ -1,44 +1,46 @@
-import React, { Component, PropTypes } from 'react'
-import styles from './index.css'
+import React, { PropTypes } from "react"
 
-export default class PageError extends Component {
+import Page from "../Page"
 
-  static propTypes = {
-    error: PropTypes.oneOfType([ PropTypes.number, PropTypes.string ]),
-    errorText: PropTypes.string,
-  };
+import styles from "./index.css"
 
-  static defaultProps = {
-    error: 404,
-    errorText: 'Page Not Found',
-  };
-
-  render() {
-    const {
-      error,
-      errorText,
-    } = this.props
-
-    return (
-      <div className={ styles.container }>
-        <div className={ styles.oops }>{ "😱 Oooops!" }</div>
-        <div className={ styles.text }>
-          <p className={ styles.title }>
-            <strong>{ error }</strong>
-            { " " }
-            { errorText }
-          </p>
-          {
-            error === 404 &&
-            <div>
-              { "It seems you found a broken link. " }
-              { "Sorry about that. " }
-              <br />
-              { "Do not hesitate to report this page 😁." }
-            </div>
-          }
-        </div>
+const PageError = ({ error, errorText }) => (
+  <Page
+    head={{
+      // hero credit: https://www.flickr.com/photos/mypubliclands/16101654539/
+      hero: "https://farm8.staticflickr.com/7559/16101654539_bee5151340_k.jpg",
+    }}
+  >
+    <div className={ styles.container }>
+      <div className={ styles.oops }>{ "😱 Oooops!" }</div>
+      <div className={ styles.text }>
+        <p className={ styles.title }>
+          <strong>{ error }</strong>
+          { " " }
+          { errorText }
+        </p>
+        {
+          error === 404 &&
+          <div>
+            { "It seems you found a broken link. " }
+            { "Sorry about that. " }
+            <br />
+            { "Do not hesitate to report this page 😁." }
+          </div>
+        }
       </div>
-    )
-  }
+    </div>
+  </Page>
+)
+
+PageError.propTypes = {
+  error: PropTypes.oneOfType([ PropTypes.number, PropTypes.string ]),
+  errorText: PropTypes.string,
 }
+
+PageError.defaultProps = {
+  error: 404,
+  errorText: "Page Not Found",
+}
+
+export default PageError
