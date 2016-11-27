@@ -3761,9 +3761,9 @@ object.omit@^2.0.0:
     for-own "^0.1.4"
     is-extendable "^0.1.1"
 
-"offline-plugin@https://github.com/MoOx/offline-plugin#phenomic":
+"offline-plugin@git+https://github.com/MoOx/offline-plugin.git#phenomic":
   version "4.2.1"
-  resolved "https://github.com/MoOx/offline-plugin#d0f95ff537f0fe4fe9b252ed5f351efd846cc02c"
+  resolved "git+https://github.com/MoOx/offline-plugin.git#d0f95ff537f0fe4fe9b252ed5f351efd846cc02c"
   dependencies:
     deep-extend "^0.4.0"
     ejs "^2.3.4"
@@ -3957,9 +3957,9 @@ pbkdf2-compat@2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/pbkdf2-compat/-/pbkdf2-compat-2.0.1.tgz#b6e0c8fa99494d94e0511575802a59a5c142f288"
 
-phenomic@^0.19.3:
-  version "0.19.3"
-  resolved "https://registry.yarnpkg.com/phenomic/-/phenomic-0.19.3.tgz#ffcb5d202b5d9fd5fa4be8862b1c3ac3001dfc38"
+phenomic@^0.19.5:
+  version "0.19.5"
+  resolved "https://registry.yarnpkg.com/phenomic/-/phenomic-0.19.5.tgz#2faf40d09eeb3a3f4fbe5add1d384694cddc344a"
   dependencies:
     babel-polyfill "^6.5.0"
     babel-register "^6.6.5"
