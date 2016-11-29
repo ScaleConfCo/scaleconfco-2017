@@ -113,6 +113,7 @@
     "history": "^2.0.0",
     "json-loader": "^0.5.2",
     "npm-run-all": "^1.7.0",
+    "phenomic": "^0.19.5",
     "postcss-browser-reporter": "^0.4.0",
     "postcss-cssnext": "^2.4.0",
     "postcss-loader": "^0.13.0",
@@ -131,14 +132,15 @@
     "stylelint": "^7.2.0",
     "warning": "^3.0.0",
     "webpack": "^1.11.0",
-    "whatwg-fetch": "^0.11.0",
-    "phenomic": "^0.19.5"
+    "whatwg-fetch": "^0.11.0"
   },
   "dependencies": {
     "exports-loader": "0.6.3",
     "fontfaceobserver": "2.0.5",
     "particles.js": "2.0.0",
     "react-google-analytics": "0.2.0",
+    "react-overlays": "^0.6.10",
+    "react-portal": "^3.0.0",
     "tachyons": "4.5.5"
   }
 }

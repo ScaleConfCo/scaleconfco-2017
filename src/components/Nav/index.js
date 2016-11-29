@@ -1,38 +1,31 @@
 import React from 'react';
+import Portal from 'react-portal'
+
+import Hamburger from '../Hamburger'
+import Menu from '../Menu'
 
 export default class Nav extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
+    this.toggle = this.toggle.bind(this)
+    this.state = {
+      open: false
+    }
+  }
+
+  toggle() {
+    this.setState({ open: !this.state.open })
   }
 
   render() {
     return (
-      <nav className="flex flex-row">
-        <div className="bg-blue pa2 white ttu dit">ScaleConf</div>
-        <ul className="list pl0 mv0 pv2 nowrap overflow-x-auto">
-          <li className="dib">
-            <a href="" className="no-underline ph2 ttu blue">Call for proposals</a>
-          </li>
-          <li className="dib">
-            <a href="" className="no-underline ph2 ttu white">About</a>
-          </li>
-          <li className="dib">
-            <a href="" className="no-underline ph2 ttu white">Speakers</a>
-          </li>
-          <li className="dib">
-            <a href="" className="no-underline ph2 ttu white">Venue</a>
-          </li>
-          <li className="dib">
-            <a href="" className="no-underline ph2 ttu white">Scholarships</a>
-          </li>
-          <li className="dib">
-            <a href="" className="no-underline ph2 ttu white">Code of conduct</a>
-          </li>
-          <li className="dib">
-            <a href="" className="no-underline ph2 ttu white">Sponsors</a>
-          </li>
-        </ul>
-      </nav>
+      <div>
+        { this.state.open ?
+          <Portal isOpened closeOnOutsideClick closeOnEsc>
+            <Menu onClick={this.toggle} />
+          </Portal> :
+          <Hamburger onClick={this.toggle} /> }
+      </div>
     )
   }
 }
