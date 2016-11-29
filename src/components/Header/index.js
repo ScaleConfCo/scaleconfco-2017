@@ -17,14 +17,14 @@ export default class Hero extends Component {
   render() {
     return (
       <div className="gradient">
-        <div id="particles-js" className="mw80 w-100 mb3 pb6 center relative">
-          <header className="absolute ml4 mt3 f3">
-            <h1 className="ttu bg-white pl3 pr3 pa1 dib mb0 green1">ScaleConf</h1>
-            <p className="ttu green2 mw5">
-              The first Colombian tech event focused on Scalability
+        <div id="particles-js" className="mw80 w-100 vh-90 center relative">
+          <header className="absolute pa4 w-100 tc">
+            <h1 className="ttu bg-white green1 f-1 mt6 eau-book">ScaleConf</h1>
+            <p className="ttu green2 pv3 ph4 pt3 f-3 mt0 open-sans">
+              The first Colombian tech event focused on Scalability.
             </p>
-            <p className="ttu white mw6">
-              Medellín, Colombia March 25 2017
+            <p className="ttu white pa3 f3 lh-copy tracked eau-bold">
+              Medellín, <span className="underline">Colombia</span> March 25 2017
             </p>
           </header>
         </div>

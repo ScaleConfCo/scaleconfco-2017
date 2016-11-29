@@ -4,14 +4,19 @@
   --green: #42E6AA;
   --green1: #34BF86;
   --green2: #128571;
+  --green3: #57FF9F;
   --blue: #249EEA;
   --blue1: #0D3B56;
+  --blue2: #068EFF;
 }
 
 .gradient {
-  background-image: linear-gradient(to right, var(--green) 0%, var(--blue) 100%);
+  background-image: linear-gradient(to right, var(--green3) 0%, var(--blue2) 100%);
 }
 
+/**
+ * Colors
+ */
 .green1 {
   color: var(--green1);
 }
@@ -25,7 +30,7 @@
 }
 
 .bg-blue {
-  background-color: var(--blue); 
+  background-color: var(--blue);
 }
 
 .b--blue {
@@ -40,6 +45,24 @@
   fill: var(--blue);
 }
 
+/**
+ * Fonts sizes
+ */
+.f-1 {
+  font-size: 3.4rem;
+}
+
+.f-3 {
+  font-size: 1.3rem;
+}
+
+/**
+ * Sizes
+ */
+.vh-90 {
+  height: 90vh;
+}
+
 .mw17 {
   max-width: 17rem;
 }
@@ -48,6 +71,45 @@
   max-width: 80rem;
 }
 
+/**
+ * Misc
+ */
 .SVGInline {
   display: flex;
+}
+
+@font-face {
+  font-family: 'eausans_book';
+  src: url('./assets/fonts/eau_sans_book-webfont.eot');
+  src:
+    url('./assets/fonts/eau_sans_book-webfont.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/eau_sans_book-webfont.woff2') format('woff2'),
+    url('./assets/fonts/eau_sans_book-webfont.woff') format('woff'),
+    url('./assets/fonts/eau_sans_book-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'eausans_bold';
+  src: url('./assets/fonts/eau_sans_bold-webfont.eot');
+  src:
+    url('./assets/fonts/eau_sans_bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/eau_sans_bold-webfont.woff2') format('woff2'),
+    url('./assets/fonts/eau_sans_bold-webfont.woff') format('woff'),
+    url('./assets/fonts/eau_sans_bold-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fonts-loaded .eau-book {
+  font-family: 'eausans_book';
+}
+
+.fonts-loaded .eau-bold {
+  font-family: 'eausans_bold';
+}
+
+.fonts-loaded .open-sans {
+  font-family: 'Open Sans';
 }
