@@ -8,7 +8,7 @@ export default class Hamburger extends React.Component {
   render() {
     return (
       <div>
-        <a onClick={this.props.onClick} className="white f1 tr db pr3 pt2">&#9776;</a>
+        <a onClick={this.props.onClick} className="white f1 tr db">&#9776;</a>
       </div>
     );
   }

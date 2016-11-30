@@ -1,4 +1,5 @@
 @import "~tachyons";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 :root {
   --green: #42E6AA;
@@ -33,6 +34,10 @@
   color: var(--blue);
 }
 
+.blue1 {
+  color: var(--blue1);
+}
+
 .bg-green {
   background-color: var(--green);
 }
@@ -60,12 +65,16 @@
   font-size: 3.4rem;
 }
 
+.f-2 {
+  font-size: 2.5rem;
+}
+
 .f-3 {
   font-size: 1.3rem;
 }
 
-.f-2 {
-  font-size: 2.5rem;
+.f-4 {
+  font-size: 1.375rem;
 }
 
 /**
@@ -81,6 +90,10 @@
 
 .mw80 {
   max-width: 80rem;
+}
+
+.h-2 {
+  height: 2.5rem;
 }
 
 /**

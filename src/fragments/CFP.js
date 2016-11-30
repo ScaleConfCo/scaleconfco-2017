@@ -7,7 +7,7 @@ export default class CFP extends React.Component {
 
   render() {
     return (
-      <div className="pa4">
+      <div>
         <h2 className="eau-book white ttu f-2 mb2">
           <span className="eau-bold">Call for</span> proposals
         </h2>
