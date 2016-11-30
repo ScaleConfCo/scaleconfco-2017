@@ -10,7 +10,7 @@ export default class About extends React.Component {
   render() {
     return (
       <div>
-        <h2 className="eau-book ttu f-2 blue">
+        <h2 className="eau-book ttu f-2 blue mt0">
           <span className="eau-bold">About</span> the conference
         </h2>
         <p className="open-sans f5 lh-copy blue1">

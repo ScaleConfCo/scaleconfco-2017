@@ -6,6 +6,7 @@
   --green1: #34BF86;
   --green2: #128571;
   --green3: #57FF9F;
+  --green4: #16CFBF;
   --blue: #249EEA;
   --blue1: #0D3B56;
   --blue2: #068EFF;
@@ -30,6 +31,10 @@
   color: var(--green2);
 }
 
+.green4 {
+  color: var(--green4);
+}
+
 .blue {
   color: var(--blue);
 }
@@ -40,6 +45,10 @@
 
 .bg-green {
   background-color: var(--green);
+}
+
+.bg-green4 {
+  background-color: var(--green4);
 }
 
 .bg-blue {
