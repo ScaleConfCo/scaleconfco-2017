@@ -26,7 +26,7 @@ export default class Hero extends Component {
             <p className="ttu white pa3 f3 lh-copy tracked eau-bold">
               Medellín, <span className="underline">Colombia</span> March 25 2017
             </p>
-            <a className="bg-blue1 mt1 white pa3">
+            <a className="bg-blue1 dib white pa3 no-underline open-sans" href="https://ti.to/colombia-dev/scaleconfco">
               Buy your tickets now
             </a>
           </header>
