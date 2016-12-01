@@ -3,7 +3,7 @@ import React from 'react';
 const Scholarships = () => {
   return (
     <div>
-      <div className="ph4 pt5">
+      <div className="pv5 ph4">
         <h2 className="eau-book blue ttu f-2">
           <span className="eau-bold">Diversity</span> Scholarships
         </h2>
