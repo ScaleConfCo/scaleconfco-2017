@@ -137,12 +137,12 @@
   "dependencies": {
     "exports-loader": "0.6.3",
     "fontfaceobserver": "2.0.5",
-    "leaflet": "^1.0.2",
+    "leaflet": "^1.0.0-rc.2",
     "particles.js": "2.0.0",
     "react-google-analytics": "0.2.0",
     "react-leaflet": "^1.0.0-rc.3",
-    "react-overlays": "^0.6.10",
-    "react-portal": "^3.0.0",
+    "react-overlays": "0.6.10",
+    "react-portal": "3.0.0",
     "tachyons": "4.5.5"
   }
 }

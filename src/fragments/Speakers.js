@@ -27,7 +27,7 @@ export default class Speakers extends React.Component {
         </p>
         {
           enhanceCollection(collection, {
-            filter: { type: 'speaker' }
+            filter: { speaker: 'yes' }
           })
           .map(speaker => {
             return (

@@ -8,7 +8,7 @@ if (typeof window !== 'undefined') {
 export default class Hero extends Component {
 
   componentDidMount() {
-    particles && particles.particlesJS.load('particles-js', 'assets/particles.json', function() {
+    particles && particles.particlesJS.load('particles-js', '/assets/particles.json', function() {
       // eslint-disable-next-line no-console
       console.log('callback - particles.js config loaded');
     })

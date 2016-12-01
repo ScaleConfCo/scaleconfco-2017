@@ -57,7 +57,7 @@ const AppContainer = (props) => {
 
 AppContainer.propTypes = {
   children: PropTypes.node,
-  params: PropTypes.Object
+  params: PropTypes.object
 }
 
 export default AppContainer
