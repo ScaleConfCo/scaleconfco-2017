@@ -1,22 +1,20 @@
 import React, { Component, PropTypes } from 'react'
 import Svg from 'react-svg-inline'
-import TwitterIcon from '../../assets/icons/iconmonstr-twitter-4.svg'
-import FacebookIcon from '../../assets/icons/iconmonstr-facebook-4.svg'
-import AnnounceIcon from '../../assets/icons/announce.svg'
-import ConnectIcon from '../../assets/icons/connect.svg'
+import TwitterIcon from '../../assets/icons/twitter.svg'
+import FacebookIcon from '../../assets/icons/facebook.svg'
+import LinkIcon from '../../assets/icons/link.svg'
 
 const icons = {
   twitter: TwitterIcon,
   facebook: FacebookIcon,
-  announce: AnnounceIcon,
-  connect: ConnectIcon,
+  link: LinkIcon
 }
 
 export default class Icon extends Component {
   renderIcon(icon, props) {
     return <Svg svg={ icons[icon] } {...props} />
   }
-  
+
   render() {
     const { icon, link, ...props } = this.props
     return (

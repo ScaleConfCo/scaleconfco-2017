@@ -132,8 +132,8 @@
 /**
  * Misc
  */
-.SVGInline {
-  display: flex;
+svg {
+  fill: currentcolor;
 }
 
 @font-face {

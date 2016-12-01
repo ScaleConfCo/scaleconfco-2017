@@ -12,7 +12,7 @@ export const Sponsors = () => {
       <div className="open-sans f4 white tc b--white br3 b--dashed bw1 pv4 mv5">
         Your company here
       </div>
-      <a href="" className="bg-green dib mt4 no-underline open-sans pa3 f4 blue1">
+      <a href="" className="bg-green dib no-underline open-sans pa3 f4 blue1">
         Become a sponsor
       </a>
     </div>

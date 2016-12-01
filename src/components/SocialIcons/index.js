@@ -13,11 +13,13 @@ export default class SocialIcons extends Component {
     } = this.context.metadata
 
     return (
-      <div className="flex mt3 justify-between">
-        <Icon icon="twitter" link={ `https://twitter.com/${pkg.twitter}` } className="fl-blue"  width="40px"
-          style={ { marginRight: '20px' } }
-        />
-        <Icon icon="facebook" link={ `https://facebook.com/${pkg.facebook}` } className="fl-blue" width="40px" />
+      <div className="tc mt4">
+        <a href={ `https://twitter.com/${pkg.twitter}` } className="w2 h2 blue dib mr2">
+          <Icon icon="twitter" />
+        </a>
+        <a href={ `https://facebook.com/${pkg.facebook}` } className="w2 h2 blue dib ml2">
+          <Icon icon="facebook" />
+        </a>
       </div>
     )
   }

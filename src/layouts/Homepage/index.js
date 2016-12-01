@@ -36,7 +36,9 @@ const Homepage = (props) => {
       <div className="bg-blue1 pv5 ph4">
         <Sponsors />
       </div>
-      <Contact />
+      <div className="pv5 ph4">
+        <Contact />
+      </div>
     </Page>
   )
 }

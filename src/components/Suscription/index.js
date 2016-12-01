@@ -10,12 +10,12 @@ export default class Suscription extends Component {
           method="post"
         >
           <input
-            className="f5 bg-white br0 ba b--blue pa2 h-2 w-70"
+            className="f5 bg-white br0 ba b--blue eau-book pa2 h-2 w-70"
             type="email"
             name="EMAIL"
             placeholder="YOU@EMAIL.COM"
           />
-          <input className="f6 bg-blue white br0 bn pa2 h-2 w-30" type="submit" value="SUBSCRIBE" />
+          <input className="f6 eau-book bg-blue white br0 bn pa2 h-2 w-30" type="submit" value="SUBSCRIBE" />
         </form>
       </div>
     )
