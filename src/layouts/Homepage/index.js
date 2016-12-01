@@ -14,9 +14,8 @@ import Sponsors from "../../fragments/Sponsors"
 const Homepage = (props) => {
   return (
     <Page { ...props }>
-      <div className="bg-blue1 pa4 pb5">
+      <div className="bg-blue1 pa4">
         <Nav />
-        <CFP />
       </div>
       <div className="ph4 pv5">
         <About />
