@@ -1,7 +1,9 @@
 import React from 'react'
 
+const isClient = typeof window !== 'undefined'
+
 let Map, TileLayer, Marker
-if (typeof window !== 'undefined') {
+if (isClient) {
   const reactLeaflet = require('react-leaflet')
   Map = reactLeaflet.Map
   TileLayer = reactLeaflet.TileLayer
@@ -25,21 +27,18 @@ const tiles = 'https://api.mapbox.com/styles/v1/mapbox/streets-v10/tiles/256/{z}
 const coordinates = [6.264524, -75.566549];
 const zoom = 16;
 
-export default class RutaNMap extends React.Component {
-  constructor() {
-    super();
-  }
-
-  render() {
-    return (
-      <div>
+export default function RutaNMap() {
+  return (
+    <div>
+      {
+        isClient &&
         <Map center={coordinates} zoom={zoom} className="vh-50" zoomControl={false}>
           <TileLayer
             url={`${tiles}${access_token}`}
           />
           <Marker position={coordinates} />
         </Map>
-      </div>
-    );
-  }
+      }
+    </div>
+  );
 }

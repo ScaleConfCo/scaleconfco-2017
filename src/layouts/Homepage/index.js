@@ -7,6 +7,7 @@ import Nav from "../../components/Nav"
 import About from "../../fragments/About"
 import Speakers from "../../fragments/Speakers"
 import Venue from "../../fragments/Venue"
+import Scholarships from "../../fragments/Scholarships"
 
 const Homepage = (props) => {
   return (
@@ -23,6 +24,9 @@ const Homepage = (props) => {
       </div>
       <div>
         <Venue />
+      </div>
+      <div>
+        <Scholarships />
       </div>
       <Contact />
     </Page>
