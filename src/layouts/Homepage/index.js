@@ -6,6 +6,7 @@ import Contact from "../../fragments/Contact"
 import Nav from "../../components/Nav"
 import About from "../../fragments/About"
 import Speakers from "../../fragments/Speakers"
+import Venue from "../../fragments/Venue"
 
 const Homepage = (props) => {
   return (
@@ -19,6 +20,9 @@ const Homepage = (props) => {
       </div>
       <div className="bg-green4 pv5 ph4">
         <Speakers />
+      </div>
+      <div>
+        <Venue />
       </div>
       <Contact />
     </Page>

@@ -1,5 +1,6 @@
 @import "~tachyons";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import "~leaflet/dist/leaflet.css";
 
 :root {
   --green: #42E6AA;
@@ -10,6 +11,7 @@
   --blue: #249EEA;
   --blue1: #0D3B56;
   --blue2: #068EFF;
+  --blue3: #019FE3;
 }
 
 .gradient {
@@ -43,6 +45,10 @@
   color: var(--blue1);
 }
 
+.blue3 {
+  color: var(--blue3);
+}
+
 .bg-green {
   background-color: var(--green);
 }
@@ -61,6 +67,10 @@
 
 .bg-blue1 {
   background-color: var(--blue1);
+}
+
+.bg-blue3 {
+  background-color: var(--blue3);
 }
 
 .fl-blue {
@@ -103,6 +113,14 @@
 
 .h-2 {
   height: 2.5rem;
+}
+
+.w-15 {
+  width: 1.5rem;
+}
+
+.h-15 {
+  height: 1.5rem;
 }
 
 /**

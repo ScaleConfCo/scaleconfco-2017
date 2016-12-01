@@ -12,7 +12,7 @@ export default class CFP extends React.Component {
           <span className="eau-bold">Call for</span> proposals
         </h2>
         <p className="ttu green eau-book f3 mt0">Is Open</p>
-        <hr className="bg-green ba dib green tl w4"/>
+        <hr className="ba dib green tl w4"/>
         <p className="open-sans white f4">
           Do you love scalable architecture,
           distribute systems, devops,
