@@ -11,7 +11,7 @@ export default class Venue extends React.Component {
     return (
       <div>
         <div className="bg-blue3 pv5 ph4">
-          <h2 className="bg-white blue3 ttu f-2 tc pv2">The Venue</h2>
+          <h2 className="bg-white blue3 ttu f-2 tc pv2 pa3 dib">The Venue</h2>
           <p className="open-sans blue1 f4">
             ScaleConf Colombia will be held in
             downtown Medellín at the Ruta N auditorium.
