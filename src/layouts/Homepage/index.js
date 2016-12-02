@@ -1,7 +1,6 @@
 import React from "react"
 
 import Page from "../Page"
-import CFP from "../../fragments/CFP"
 import Contact from "../../fragments/Contact"
 import Nav from "../../components/Nav"
 import About from "../../fragments/About"
