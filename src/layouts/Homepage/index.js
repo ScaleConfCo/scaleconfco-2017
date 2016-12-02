@@ -10,6 +10,7 @@ import Venue from "../../fragments/Venue"
 import Scholarships from "../../fragments/Scholarships"
 import CodeOfConduct from "../../fragments/CodeOfConduct"
 import Sponsors from "../../fragments/Sponsors"
+import Organizers from "../../fragments/Organizers"
 
 const Homepage = (props) => {
   return (
@@ -34,6 +35,9 @@ const Homepage = (props) => {
       </div>
       <div className="bg-blue1 pv5 ph4">
         <Sponsors />
+      </div>
+      <div className="gradient pv5 ph4">
+        <Organizers />
       </div>
       <div className="pv5 ph4">
         <Contact />
