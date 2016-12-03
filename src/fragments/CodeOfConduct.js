@@ -2,11 +2,11 @@ import React from 'react';
 
 const CodeOfConduct = () => {
   return (
-    <div>
-      <h2 className="eau-book white ttu f-2">
+    <div className="mw80 center pv5 ph4">
+      <h2 className="eau-book white ttu f-2 f-1-l">
         <span className="eau-bold">Our code of</span> conduct
       </h2>
-      <p className="open-sans blue1 lh-copy">
+      <p className="open-sans blue1 lh-copy f4-l">
         A primary goal of ScaleConf Colombia is to be inclusive to the largest
         number of contributors, with the most varied and diverse backgrounds
         possible. As such, we are committed to providing a friendly, safe and

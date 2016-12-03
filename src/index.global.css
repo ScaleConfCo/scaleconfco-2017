@@ -1,4 +1,3 @@
-@import "~tachyons";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import "~leaflet/dist/leaflet.css";
 
@@ -9,6 +8,7 @@
   --green3: #57FF9F;
   --green4: #16CFBF;
   --green5: #01C1C9;
+  --green6: #32EAAE;
   --blue: #249EEA;
   --blue1: #0D3B56;
   --blue2: #068EFF;
@@ -42,6 +42,9 @@
   background-color: var(--green5);
 }
 
+.b--green6 {
+  border-color: var(--green6);
+}
 
 .blue {
   color: var(--blue);
@@ -106,11 +109,19 @@
   font-size: 2rem;
 }
 
+.f-30 {
+  font-size: 1.875rem;
+}
+
 /**
  * Sizes
  */
 .vh-90 {
   height: 90vh;
+}
+
+.h-650 {
+  height: 650px;
 }
 
 .mw17 {
@@ -119,6 +130,10 @@
 
 .mw80 {
   max-width: 80rem;
+}
+
+.mw22 {
+  max-width: 22rem;
 }
 
 .h-2 {
@@ -131,6 +146,19 @@
 
 .h-15 {
   height: 1.5rem;
+}
+
+/**
+ * Media queries
+ */
+@media screen and (min-width: 60em) {
+  .f-1-l {
+    font-size: 3.75rem;
+  }
+
+  .bl--solid-l {
+    border-left-style: solid;
+  }
 }
 
 /**
@@ -175,3 +203,5 @@ svg {
 .fonts-loaded .open-sans {
   font-family: 'Open Sans';
 }
+
+@import "~tachyons";

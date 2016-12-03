@@ -17,22 +17,22 @@ const Homepage = (props) => {
       <div className="bg-blue1 pa4">
         <Nav />
       </div>
-      <div className="ph4 pv5">
+      <div className="ph4 pv5 mw80 center">
         <About />
       </div>
-      <div className="bg-green4 pv5 ph4">
+      <div className="bg-green4">
         <Speakers />
       </div>
-      <div>
+      <div className="bg-blue3">
         <Venue />
       </div>
-      <div>
+      <div className="mw80 center">
         <Scholarships />
       </div>
-      <div className="bg-green5 pv5 ph4">
+      <div className="bg-green5">
         <CodeOfConduct />
       </div>
-      <div className="bg-blue1 pv5 ph4">
+      <div className="bg-blue1">
         <Sponsors />
       </div>
       <div className="gradient pv5 ph4">

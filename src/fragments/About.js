@@ -9,11 +9,11 @@ export default class About extends React.Component {
 
   render() {
     return (
-      <div>
-        <h2 className="eau-book ttu f-2 blue mt0">
+      <div className="mw7-l">
+        <h2 className="eau-book ttu f-2 blue mt0 f-1-l">
           <span className="eau-bold">About</span> the conference
         </h2>
-        <p className="open-sans f5 lh-copy blue1">
+        <p className="open-sans f5 lh-copy blue1 f4-l">
           Created by a team of active members
           of the sotfware community in Colombia,
           ScaleConf Colombia is a pioneering tech
@@ -26,7 +26,7 @@ export default class About extends React.Component {
           that are paving the way for a global scale in tomorrow's
           apps and services.
         </p>
-        <h4 className="blue open-sans f-4 lh-copy">
+        <h4 className="blue open-sans f-4 lh-copy f3-l">
           Stay up on ScaleConf Colombia news
           <br />
           Join our mailing list

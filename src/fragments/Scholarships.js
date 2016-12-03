@@ -3,11 +3,11 @@ import React from 'react';
 const Scholarships = () => {
   return (
     <div>
-      <div className="pv5 ph4">
-        <h2 className="eau-book blue ttu f-2">
+      <div className="pv5 ph4 mw7-l">
+        <h2 className="eau-book blue ttu f-2 f-1-l">
           <span className="eau-bold">Diversity</span> Scholarships
         </h2>
-        <p className="open-sans blue1 lh-copy">
+        <p className="open-sans blue1 lh-copy f4-l">
           We are constantly looking for ways to
           make the web development community more inclusive,
           and our Diversity Scholarship program, which covers
