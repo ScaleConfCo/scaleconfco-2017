@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Nav from "../Nav"
 
 let particles
 if (typeof window !== 'undefined') {
@@ -17,6 +18,7 @@ export default class Hero extends Component {
   render() {
     return (
       <div id="particles-js" className="w-100 gradient h-650">
+        <Nav />
         <div className="mw80 w-100 center relative">
           <header className="absolute pa4 w-100 tc tl-l w-auto-l">
             <h1 className="ttu bg-white pa1 green1 mt6 eau-book f-1 f-6-l dib-l ph4-l pv3-l mb3-l">ScaleConf</h1>

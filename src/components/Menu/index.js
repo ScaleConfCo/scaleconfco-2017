@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import { Link } from 'react-router'
 
 export default class Menu extends React.Component {
   constructor(props) {
@@ -27,7 +28,8 @@ export default class Menu extends React.Component {
             <a href="" className="no-underline white ttu f4">Code of conduct</a>
           </li>
           <li className="pv3">
-            <a href="" className="no-underline white ttu f4">Sponsors</a>
+            <Link to="#sponsors" className="no-underline white ttu f4">Sponsors</Link>
+            {/* <a href="" className="no-underline white ttu f4">Sponsors</a> */}
           </li>
         </ul>
       </nav>
