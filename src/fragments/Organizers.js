@@ -9,29 +9,35 @@ export const Organizers = () => {
         </span>
         <span className="eau-bold">Organized</span> with love by
       </h2>
-      <div className="db-l mt3-l">
+      <div className="mt3-l flex items-center justify-center flex-column flex-row-l">
         <div className="mb3 tc dib-l mh4-l w4-l">
-          <img src="https://pbs.twimg.com/profile_images/793287819695357952/SR4pJ2KY_400x400.jpg" alt="" className="br-100 w4 h4 cover"/>
+          <img src={require('../../src/assets/organizers/juan.png')} alt="" className="br-100 w4 h4 cover"/>
           <p className="eau-book blue1 tc ttu lh-copy b">
-            Juanda Babe Castillo
+            Juan David Castillo
           </p>
         </div>
         <div className="mb3 tc dib-l mh4-l w4-l">
-          <img src="https://jsconf.co/media/cache/3f/31/3f3117d23fbfc1b46832e2a5b05ca1a4.png" alt="" className="br-100 w4 h4 cover"/>
+          <img src={require('../../src/assets/organizers/cathe.png')} alt="" className="br-100 w4 h4 cover"/>
           <p className="eau-book blue1 tc ttu lh-copy b">
-            Super Catherine
+            Caherine Lopez
           </p>
         </div>
         <div className="mb3 tc dib-l mh4-l w4-l">
-          <img src="https://pbs.twimg.com/profile_images/803968461504450561/_ckgJzba.jpg" alt="" className="br-100 w4 h4 cover"/>
+          <img src={require('../../src/assets/organizers/pony.png')} alt="" className="br-100 w4 h4 cover"/>
           <p className="eau-book blue1 tc ttu lh-copy b">
-            Pony Garcia de los Dolores
+            Valeria Garcia
           </p>
         </div>
         <div className="mb3 tc dib-l mh4-l w4-l">
-          <img src="https://pbs.twimg.com/profile_images/564645112781623296/pPDjEaSL.jpeg" alt="" className="br-100 w4 h4 cover"/>
+          <img src={require('../../src/assets/organizers/montofriend.png')} alt="" className="br-100 w4 h4 cover"/>
           <p className="eau-book blue1 tc ttu lh-copy b">
-            Montoamiguis friend
+            Fernando Montoya
+          </p>
+        </div>
+        <div className="mb3 tc dib-l mh4-l w4-l">
+          <img src={require('../../src/assets/organizers/nicolas.jpg')} alt="" className="br-100 w4 h4 cover"/>
+          <p className="eau-book blue1 tc ttu lh-copy b">
+            Nicolás Hock
           </p>
         </div>
       </div>

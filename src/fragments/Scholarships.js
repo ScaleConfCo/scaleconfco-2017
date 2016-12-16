@@ -2,8 +2,8 @@ import React from 'react';
 
 const Scholarships = () => {
   return (
-    <div>
-      <div className="pv5 ph4 mw7-l">
+    <div className="flex flex-column flex-row-l items-center justify-between">
+      <div className="pv5 ph4 pr0-l mw7-l">
         <h2 className="eau-book blue ttu f-2 f-1-l">
           <span className="eau-bold">Diversity</span> Scholarships
         </h2>
@@ -21,6 +21,7 @@ const Scholarships = () => {
           opportunity to grow.
         </p>
       </div>
+      <img src={require('../../src/assets/images/diversity.png')} alt="ScaleConf Colombia Scholarships" className="w-100 w-40-l dib-l"/>
     </div>
   );
 }

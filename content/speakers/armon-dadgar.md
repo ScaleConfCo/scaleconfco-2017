@@ -1,8 +1,8 @@
 ---
 name: Armon Dadgar
-photo: https://s3.amazonaws.com/uifaces/faces/twitter/mlane/128.jpg
-description: Co-founder of Hashicorp
+photo: armon.png
+description: Hashicorp CTO & Co-founder
 twitter: https://twitter.com/armon
-url: http://armondadgar.com/
+url: https://www.hashicorp.com/
 speaker: yes
 ---
