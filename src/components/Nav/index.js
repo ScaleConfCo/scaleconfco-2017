@@ -20,11 +20,11 @@ export default class Nav extends React.Component {
       <div className="fixed left-0 right-0 top-0 bg-blue1 z-999">
         {
           this.state.open &&
-          <a onClick={this.toggle} className="white f1 tr db dn-l ph2">&#x2715;</a>
+          <a onClick={this.toggle} className="white f1 tr db dn-l ph2 pointer">&#x2715;</a>
         }
         {
           !this.state.open &&
-          <a onClick={this.toggle} className="white f1 tr db dn-l ph2">&#9776;</a>
+          <a onClick={this.toggle} className="white f1 tr db dn-l ph2 pointer">&#9776;</a>
         }
         <div className={`ph4 mw80 center ${openClass} db-l`}>
           <nav className="bg-blue1 vh-100 h-auto-l" style={{'fontSize': 0}}>
