@@ -1,88 +1,291 @@
-:root {
+/*:root {
   --green: #42E6AA;
   --green1: #34BF86;
   --green2: #128571;
   --green3: #57FF9F;
-  --green4: #16CFBF;
   --green5: #01C1C9;
   --green6: #32EAAE;
   --blue: #249EEA;
   --blue1: #0D3B56;
   --blue2: #068EFF;
   --blue3: #019FE3;
+  --blue4: #113a58;
+  --blue5: #16496e;
+  --white: #fff;
+}*/
+:root{
+/* COLORS */
+
+/* Gradients */
+--green-gradient: #57FF9F;
+--blue-gradient: #068EFF;
+/* Backgrounds */
+--dark-blue:#16496e;
+--dark-black-blue: #14385a;
+--medium-dark-blue:#113a58;
+/* Buttons and Titles*/
+--bright-green: #4cffc9;
+--blue: #33a3ff;
+--white: #fff;
+/*Date and place of event*/
+--dark-green: #2c6b5d;
+
+/* FONT SIZES*/
+--section-titles: 3.125rem;
+--content-text: 1rem;
+--section-description: 1.1875rem;
 }
 
+
+/* -----------------
+*/
 .gradient {
-  background-image: linear-gradient(to right, var(--green3) 0%, var(--blue2) 100%);
+  background-image: linear-gradient(to right, var(--green-gradient) 0%, var(--blue-gradient) 100%);
 }
 
-/**
- * Colors
- */
-.green {
-  color: var(--green);
+.bg-speakers, .bg-coc, .bg-venue {
+  background-color: var(--medium-dark-blue);
 }
 
-.green1 {
-  color: var(--green1);
+ .bg-sponsors{
+  background-color: var(--dark-blue);
+
 }
 
-.green2 {
-  color: var(--green2);
+/*HOME */
+
+header{
+  padding: 4rem;
+  position: absolute;
 }
 
-.green4 {
-  color: var(--green4);
+.home__title{
+  color: var(--white);
+  text-transform: uppercase;
+  margin: 0;
+}
+.home__title--scaleconf{
+  font-family: 'eausans_bold';
+  font-size: 5.625rem;
+  margin-top: 6.5rem;
+  margin-bottom: -0.5rem;
+  letter-spacing: 0.1rem;
+}
+.home__title--colombia{
+  font-family: 'Open Sans';
+  font-size: 4rem;
+  letter-spacing: 0.55rem;
+}
+.home__date{
+  font-size: 1.875rem;
+  color: var(--dark-green);
+  font-family: 'Open Sans';
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
-.bg-green5 {
-  background-color: var(--green5);
+/* SECTION STYLES */
+.section{
+  padding: 4rem 4rem;
 }
-
-.b--green6 {
-  border-color: var(--green6);
+.section__title{
+  font-family: 'eausans_bold';
+  font-size: 3.125rem;
+  text-transform: uppercase;
+  margin-top: 0;
 }
-
-.blue {
+.section__content{
+  font-size: 1rem;
+  font-family: 'Open Sans';
+}
+.section__title--about, .section__title--scholarships{
   color: var(--blue);
 }
-
-.blue1 {
-  color: var(--blue1);
+.section__title--speakers, .section__title--venue, .section__title--coc{
+  color: var(--bright-green);
 }
-
-.blue3 {
-  color: var(--blue3);
+.section__title--sponsors{
+  color: var(--white);
+  margin: 0;
 }
-
-.bg-green {
-  background-color: var(--green);
+.section__title--venue{
+  margin: 0;
 }
-
-.bg-green4 {
-  background-color: var(--green4);
+.section__title--organizers{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  max-width: 20rem;
+  text-align: left;
+  color: var(--white);
 }
-
-.bg-blue {
+.section__title--contact{
+  font-size: 2rem;
+  text-align: center;
+  color: var(--dark-blue);
+  margin-bottom: 1rem;
+}
+/*About*/
+.copy--about{
+  font-family: 'Open Sans';
+  font-size: 1.375rem;
+  font-weight: 600;
+  color: var(--blue);
+  line-height: 2rem;
+}
+.form--about{
+  max-width: 35rem;
+}
+.form--about>.input--email{
+  border: 1px solid var(--blue);
+}
+.form--about>.input--button{
   background-color: var(--blue);
 }
-
-.b--blue {
-  border-color: var(--blue);
+/*Speakers*/
+.copy--speakers{
+  font-size: 1.1875rem;
+  color: var(--white);
+  padding-bottom: 2rem;
+  width: 40rem;
+  border-bottom: 1px solid var(--bright-green);
+}
+.speaker__name{
+  font-family: 'eausans_book';
+  font-size: 1.375rem;
+  color: var(--bright-green);
+  text-transform: uppercase;
+}
+.speaker__desc{
+  font-size: 1rem;
+  color: var(--white);
+  margin: 2rem 0;
+}
+.SVGInline{
+  color: var(--dark-blue);
+}
+.speaker__container{
+  margin: 2rem;
+}
+.speaker__container{
+  min-width: 15rem;
 }
 
-.bg-blue1 {
-  background-color: var(--blue1);
+/*Sponsors*/
+.sponsors__content{
+  font-size: 1.1875rem;
+  font-family: 'Open Sans';
+  color: var(--white);
+  line-height: 1.5;
+}
+/*Venue*/
+.venue__content{
+  font-size: 1.1875rem;
+  line-height: 1.5 !important;
+  color: var(--white);
+  padding-right: 2.5rem;
+}
+.venue__content__address{
+  font-weight: 300;
+}
+.content__container{
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.venue__address{
+  padding-left: 2.5rem;
+  border-left: 1px solid var(--bright-green);
+}
+.venue__divide--horizontal-line{
+  display: none;
+}
+/* Scholarships*/
+.scholarship__content{
+  line-height: 1.65;
+}
+.title_container{
+  align-self: flex-start;
+}
+.scholarships__image{
+  width: 45%;
+  margin: 0 -4rem -2rem 0;
+  align-self: flex-end;
+  max-width: 80%;
 }
 
-.bg-blue3 {
-  background-color: var(--blue3);
+/* Code of Conduct*/
+.coc__content{
+  color: var(--white);
+}
+/*Organizers*/
+.icon--heart{
+  fill: var(--dark-blue);
+  width: 4rem;
+  height: 4rem;
+  float:left;
+  margin-right: 1rem;
+}
+.organizers__name{
+  font-family: 'eausans_bold';
+  text-transform: uppercase;
+  line-height: 1;
+  color: var(--dark-blue);
+  text-align: center;
+}
+.title_container--organizers{
+  margin-left: auto;
+  margin-right: auto;
+}
+/*Contact*/
+.title--join{
+  text-transform: uppercase;
+  font-family: 'Open Sans';
+  font-weight: 700;
+  color: var(--dark-blue);
+  font-size: 1.25rem;
+  text-align: center;
+}
+.title--mail{
+  font-size: 1.25rem;
+  color:var(--blue);
+  font-family: 'eausans_book';
+  text-align: center;
+  margin: 1rem 0;
+  display: block;
 }
 
-.fl-blue {
-  fill: var(--blue);
+/*BUTTONS*/
+
+.btn{
+  font-family: 'Open Sans';
+  text-decoration: none;
+  font-size: 1.1875rem;
+  padding: 0.8rem 2.5rem;
+  color: var(--white);
+  display:inline-block;
+}
+.btn--home{
+  background-color: var(--dark-black-blue);
+  margin-top: 2.3rem;
+}
+.btn--sponsors, .btn--venue, .btn--coc{
+  background-color: var(--bright-green);
+  color: var(--dark-black-blue);
 }
 
+.btn--coc{
+  margin-top: 1rem;
+}
+
+/*NAVIGATION*/
+
+.nav__opt{
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--white);
+}
 /**
  * Fonts sizes
  */
@@ -156,9 +359,67 @@
   .f-1-l {
     font-size: 3.75rem;
   }
-
   .bl--solid-l {
     border-left-style: solid;
+  }
+}
+
+@media(max-width:900px){
+  .copy--speakers{
+    width: 100%;
+  }
+  header{
+    padding: 2rem;
+  }
+  .venue__divide--horizontal-line{
+    display: block;
+    border-color: var(--bright-green);
+  }
+  .content__container{
+    display:block;
+  }
+  .venue__address{
+    padding-left: 0;
+    border-left: none;
+  }
+  .title_container--organizers{
+    max-width: 19rem;
+  }
+}
+@media (max-width: 500px){
+  .home__date{
+    font-size: 1.3rem;
+  }
+  .home__title--colombia{
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+  .home__title--scaleconf{
+    font-size: 3.625rem;
+  }
+  .btn{
+    font-size: 1rem;
+  }
+  .section__title{
+    font-size: 2.5rem;
+  }
+  .copy--speakers{
+    line-height: 1.5;
+  }
+  .section__content{
+    line-height: 1.35;
+  }
+  .section{
+    padding: 4rem 2rem;
+  }
+  .home__title--scaleconf{
+    margin-top: 8.5rem;
+  }
+}
+
+@media(max-width:400px){
+  .home__title--scaleconf{
+    font-size: 3rem;
   }
 }
 

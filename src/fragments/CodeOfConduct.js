@@ -2,11 +2,11 @@ import React from 'react';
 
 const CodeOfConduct = () => {
   return (
-    <div className="mw80 center pv5 ph4">
-      <h2 className="eau-book white ttu f-2 f-1-l">
-        <span className="eau-bold">Our code of</span> conduct
+    <div className="mw80 center">
+      <h2 className="section__title section__title--coc">
+        Our code of <span className="eau-book">conduct</span>
       </h2>
-      <p className="open-sans blue1 lh-copy f4-l">
+      <p className="section__content coc__content lh-copy">
         A primary goal of ScaleConf Colombia is to be inclusive to the largest
         number of contributors, with the most varied and diverse backgrounds
         possible. As such, we are committed to providing a friendly, safe and
@@ -19,7 +19,7 @@ const CodeOfConduct = () => {
         We invite all those who participate in ScaleConf Colombia to help us
         create safe and positive experiences for everyone.
       </p>
-      <a href="https://github.com/ScaleConfCo/code-of-conduct" className="bg-blue1 dib white pa3 mt4 no-underline open-sans center">
+      <a href="https://github.com/ScaleConfCo/code-of-conduct" className="btn btn--coc center">
         Read Code of Conduct
       </a>
     </div>

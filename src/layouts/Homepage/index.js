@@ -13,28 +13,28 @@ import Organizers from "../../fragments/Organizers"
 const Homepage = (props) => {
   return (
     <Page { ...props }>
-      <div className="ph4 pv5 mw80 center" id="about">
+      <div className="section mw80 center" id="about">
         <About />
       </div>
-      <div className="bg-green4" id="speakers">
+      <div className="section bg-speakers" id="speakers">
         <Speakers />
       </div>
-      <div className="bg-blue3" id="venue">
-        <Venue />
-      </div>
-      <div className="mw80 center" id="scholarships">
-        <Scholarships />
-      </div>
-      <div className="bg-green5" id="codeofconduct">
-        <CodeOfConduct />
-      </div>
-      <div className="bg-blue1" id="sponsors">
+      <div className="section bg-sponsors" id="sponsors">
         <Sponsors />
       </div>
-      <div className="gradient pv5 ph4">
+      <div className="section bg-venue" id="venue">
+        <Venue />
+      </div>
+      <div className="section mw80 center" id="scholarships">
+        <Scholarships />
+      </div>
+      <div className="section bg-coc" id="codeofconduct">
+        <CodeOfConduct />
+      </div>
+      <div className="section gradient">
         <Organizers />
       </div>
-      <div className="pv5 ph4">
+      <div className="section pv5 ph4">
         <Contact />
       </div>
     </Page>

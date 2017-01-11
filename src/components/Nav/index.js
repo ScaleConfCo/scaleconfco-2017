@@ -29,26 +29,23 @@ export default class Nav extends React.Component {
         <div className={`ph4 mw80 center ${openClass} db-l`}>
           <nav className="bg-blue1 vh-100 h-auto-l" style={{'fontSize': 0}}>
             <ul className="list tc pl0 eau-bold flex justify-between flex-column flex-row-l h-75">
-              <li className="pv3 bg-blue white ttu dn dib-l">
-                <a onClick={this.toggle} href="#" className="no-underline white ttu f4 ph4">ScaleConf</a>
+              <li className="pv3">
+                <a onClick={this.toggle} href="#about" className="nav__opt">About</a>
               </li>
               <li className="pv3">
-                <a onClick={this.toggle} href="#about" className="no-underline white ttu f4">About</a>
+                <a onClick={this.toggle} href="#speakers" className="nav__opt">Speakers</a>
               </li>
               <li className="pv3">
-                <a onClick={this.toggle} href="#speakers" className="no-underline white ttu f4">Speakers</a>
+                <a onClick={this.toggle} href="#venue" className="nav__opt">Venue</a>
               </li>
               <li className="pv3">
-                <a onClick={this.toggle} href="#venue" className="no-underline white ttu f4">Venue</a>
+                <a onClick={this.toggle} href="#scholarships" className="nav__opt">Scholarships</a>
               </li>
               <li className="pv3">
-                <a onClick={this.toggle} href="#scholarships" className="no-underline white ttu f4">Scholarships</a>
+                <a onClick={this.toggle} href="#codeofconduct" className="nav__opt">Code of conduct</a>
               </li>
               <li className="pv3">
-                <a onClick={this.toggle} href="#codeofconduct" className="no-underline white ttu f4">Code of conduct</a>
-              </li>
-              <li className="pv3">
-                <a onClick={this.toggle} href="#sponsors" className="no-underline white ttu f4">Sponsors</a>
+                <a onClick={this.toggle} href="#sponsors" className="nav__opt">Sponsors</a>
               </li>
             </ul>
           </nav>
