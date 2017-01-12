@@ -11,10 +11,11 @@ export default class About extends React.Component {
     return (
       <div className="flex items-center">
         <div className="mw7-l dib-l">
-          <h2 className="eau-book ttu f-2 blue f-1-l">
-            <span className="eau-bold">About</span> the conference
+          <h2 className="section__title section__title--about">
+            About<br/>
+              <span className="eau-book">the conference</span>
           </h2>
-          <p className="open-sans f5 lh-copy blue1 f4-l">
+          <p className="section__content">
             Created by a team of active members
             of the sotfware community in Colombia,
             ScaleConf Colombia is a pioneering tech
@@ -27,10 +28,9 @@ export default class About extends React.Component {
             that are paving the way for a global scale in tomorrow's
             apps and services.
           </p>
-          <h4 className="blue open-sans f-4 lh-copy f3-l">
-            Stay up on ScaleConf Colombia news
-            <br />
-            Join our mailing list
+          <h4 className="copy--about">
+            Stay up on ScaleConf Colombia news.  <br/>
+            Join our mailing list.
           </h4>
           <Suscription />
         </div>

@@ -6,16 +6,16 @@ class Contact extends Component {
   render() {
     return (
       <div className="mw80 center">
-        <h2 className="eau-bold blue1 ttu tc f3">
+        <h2 className="section__title section__title--contact">
           Let’s stay in touch
         </h2>
-        <p className="open-sans blue1 f4 tc ttu">
+        <p className="title--join">
           Join our mailing list
         </p>
         <div className="mw6 center">
           <Suscription />
         </div>
-        <a href="mailto: hola@scaleconfco.com" className="eau-book blue tc db mv3 b">
+        <a href="mailto: hola@scaleconfco.com" className="title--mail">
           hola@scaleconfco.com
         </a>
         <SocialIcons />

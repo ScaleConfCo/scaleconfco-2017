@@ -21,23 +21,23 @@ export default class Speakers extends React.Component {
     });
 
     return (
-      <div className="tc mw80 center tl-l pv5 ph4">
-        <h2 className="bg-white eau-bold f-2 green4 mh3 pv2 ttu f-1-l dib-l ph4-l pv2-l mh0-l mb0-l">
-          The Speakers
+      <div className="tc mw80 center tl-l">
+        <h2 className="section__title section__title--speakers">
+          Speakers
         </h2>
-        <p className="blue1 open-sans f4 f3-l">
-          A list of talented smart people <br className="dn-l"/>
-          that want to share their <br className="dn-l"/>
+        <p className="copy--speakers">
+          A list of talented smart people
+          that want to share their
           knowledge with us
         </p>
         <div className="flex flex-wrap justify-center">
           {
             speakers.map((speaker, i) => {
               return (
-                <div className="mb5 ma5-l w5-l tc" key={`${speaker.name}-${i}`}>
+                <div className="speaker__container mb5 w5-l tc" key={`${speaker.name}-${i}`}>
                   <img src={require(`../../src/assets/speakers/${speaker.photo}`)} alt={speaker.name} className="br-100"/>
-                  <p className="eau-book white ttu f4">{speaker.name}</p>
-                  <p className="open-sans center blue4 mw5">{speaker.description}</p>
+                  <p className="speaker__name">{speaker.name}</p>
+                  <p className="speaker__desc">{speaker.description}</p>
                   { speaker.twitter &&
                     <a href={speaker.twitter} className="green4 dib h-15 w-15 br-100 pa2 bg-white mr2">
                       <Icon icon="twitter"></Icon>
