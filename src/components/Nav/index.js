@@ -36,6 +36,9 @@ export default class Nav extends React.Component {
                 <a onClick={this.toggle} href="#speakers" className="nav__opt">Speakers</a>
               </li>
               <li className="pv3">
+                <a onClick={this.toggle} href="#sponsors" className="nav__opt">Sponsors</a>
+              </li>
+              <li className="pv3">
                 <a onClick={this.toggle} href="#venue" className="nav__opt">Venue</a>
               </li>
               <li className="pv3">
@@ -43,9 +46,6 @@ export default class Nav extends React.Component {
               </li>
               <li className="pv3">
                 <a onClick={this.toggle} href="#codeofconduct" className="nav__opt">Code of conduct</a>
-              </li>
-              <li className="pv3">
-                <a onClick={this.toggle} href="#sponsors" className="nav__opt">Sponsors</a>
               </li>
             </ul>
           </nav>
