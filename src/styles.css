@@ -85,6 +85,10 @@
   border-radius: 50%;
 }
 
+.bb-bright-green {
+  border-bottom: 1px solid var(--bright-green);
+}
+
 /* -----------------
 */
 .gradient {

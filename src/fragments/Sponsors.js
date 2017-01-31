@@ -19,6 +19,10 @@ export const Sponsors = () => {
       <a href="mailto:hola@Scaleconfco.com?subject=I%20wanna%20sponsor%20ScaleConf%20Colombia!" className="btn btn--sponsors">
         Become a sponsor
       </a>
+      <div className="mt6 w-25">
+        <p className="open-sans bright-green f-30 mb1 bb-bright-green">Partners</p>
+        <img src={require('../../src/assets/images/sponsors/rutan.png')} alt="Ruta N" className="w5"/>
+      </div>
     </div>
   );
 }
