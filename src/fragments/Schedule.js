@@ -70,7 +70,7 @@ Timeline.propTypes = {
 
 const Day = ({ date, schedule, index }) => {
   return (
-    <div className="flex-auto w-50">
+    <div className="flex-auto w-50-l">
       <div>
         <p className="bright-green ttu eau-bold f-1-75 mb1">Day { index }</p>
         <p className="white ttu eau-book f-1-125 mt0">{date}</p>
@@ -94,7 +94,7 @@ class Schedule extends Component {
         <h2 className="ttu bright-green eau-bold f-s-t">
           Schedule
         </h2>
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap flex-row-ns">
           <Day date="March 24" schedule={day1} index={"1"} />
           <Day date="March 25" schedule={day2} index={"2"} />
         </div>
