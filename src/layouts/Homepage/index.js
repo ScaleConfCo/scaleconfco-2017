@@ -9,6 +9,7 @@ import Scholarships from "../../fragments/Scholarships"
 import CodeOfConduct from "../../fragments/CodeOfConduct"
 import Sponsors from "../../fragments/Sponsors"
 import Organizers from "../../fragments/Organizers"
+import Schedule from "../../fragments/Schedule"
 
 const Homepage = (props) => {
   return (
@@ -18,6 +19,9 @@ const Homepage = (props) => {
       </div>
       <div className="section bg-speakers" id="speakers">
         <Speakers />
+      </div>
+      <div className="section bg-dark-dark-blue" id="schedule">
+        <Schedule />
       </div>
       <div className="section bg-sponsors" id="sponsors">
         <Sponsors />
