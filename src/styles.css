@@ -1,41 +1,33 @@
-/*:root {
-  --green: #42E6AA;
-  --green1: #34BF86;
-  --green2: #128571;
-  --green3: #57FF9F;
-  --green5: #01C1C9;
-  --green6: #32EAAE;
-  --blue: #249EEA;
-  --blue1: #0D3B56;
-  --blue2: #068EFF;
-  --blue3: #019FE3;
-  --blue4: #113a58;
-  --blue5: #16496e;
+:root {
+  /* COLORS */
+
+  /* Gradients */
+  --green-gradient: #57FF9F;
+  --blue-gradient: #068EFF;
+  /* Backgrounds */
+  --dark-blue:#16496e;
+  --dark-black-blue: #14385a;
+  --medium-dark-blue:#113a58;
+  /* Buttons and Titles*/
+  --bright-green: #4cffc9;
+  --blue: #33a3ff;
   --white: #fff;
-}*/
-:root{
-/* COLORS */
+  /*Date and place of event*/
+  --dark-green: #2c6b5d;
 
-/* Gradients */
---green-gradient: #57FF9F;
---blue-gradient: #068EFF;
-/* Backgrounds */
---dark-blue:#16496e;
---dark-black-blue: #14385a;
---medium-dark-blue:#113a58;
-/* Buttons and Titles*/
---bright-green: #4cffc9;
---blue: #33a3ff;
---white: #fff;
-/*Date and place of event*/
---dark-green: #2c6b5d;
-
-/* FONT SIZES*/
---section-titles: 3.125rem;
---content-text: 1rem;
---section-description: 1.1875rem;
+  /* FONT SIZES*/
+  --section-titles: 3.125rem;
+  --content-text: 1rem;
+  --section-description: 1.1875rem;
 }
 
+.bright-green {
+  color: var(--bright-green);
+}
+
+.f-c-t {
+  font-size: var(--content-text);
+}
 
 /* -----------------
 */
@@ -149,12 +141,6 @@ header{
   padding-bottom: 2rem;
   width: 40rem;
   border-bottom: 1px solid var(--bright-green);
-}
-.speaker__name{
-  font-family: 'eausans_book';
-  font-size: 1.375rem;
-  color: var(--bright-green);
-  text-transform: uppercase;
 }
 .speaker__desc{
   font-size: 1rem;
@@ -344,12 +330,8 @@ header{
   height: 2.5rem;
 }
 
-.w-15 {
-  width: 1.5rem;
-}
-
-.h-15 {
-  height: 1.5rem;
+.w-2-5 {
+  width: 2.5rem;
 }
 
 /**
