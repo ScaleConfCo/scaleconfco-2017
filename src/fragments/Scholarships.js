@@ -21,7 +21,7 @@ const Scholarships = () => {
           group in technology and is looking for an
           opportunity to grow.
         </p>
-        <a href="#" className="btn btn--coc center bg-blue white">
+        <a href="https://scaleconfcolombia.typeform.com/to/OFYCec" className="btn btn--coc center bg-blue white">
           Apply
         </a>
       </div>
