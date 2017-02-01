@@ -26,6 +26,10 @@
   color: var(--bright-green);
 }
 
+.bg-blue {
+  color: var(--blue);
+}
+
 .bg-bright-green {
   background-color: var(--bright-green);
 }

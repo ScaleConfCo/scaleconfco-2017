@@ -1,7 +1,7 @@
 ---
 name: Armon Dadgar
 company: Hashicorp
-pole: CTO
+role: CTO
 talk: What is DevOps?
 website: https://www.hashicorp.com/
 twitter: armon

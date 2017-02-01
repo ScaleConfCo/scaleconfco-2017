@@ -21,6 +21,9 @@ const Scholarships = () => {
           group in technology and is looking for an
           opportunity to grow.
         </p>
+        <a href="#" className="btn btn--coc center bg-blue white">
+          Apply
+        </a>
       </div>
       <img src={require('../../src/assets/images/diversity.png')} alt="ScaleConf Colombia Scholarships" className="w-100 w-40-l dib-l scholarships__image"/>
     </div>
