@@ -1,5 +1,6 @@
 import React, {PropTypes} from 'react';
 import Icon from '../components/Icon'
+import Modal from 'react-modal'
 import enhanceCollection from "phenomic/lib/enhance-collection"
 
 export default class Speakers extends React.Component {
@@ -9,13 +10,54 @@ export default class Speakers extends React.Component {
 
   constructor(props) {
     super(props);
+
+    this.state = {
+      showModal: false,
+      speaker: null
+    };
+
+    this.showProfile = this.showProfile.bind(this);
+    this.hideProfile = this.hideProfile.bind(this);
+  }
+
+  showProfile(speaker) {
+    this.setState({ showModal: true, speaker });
+  }
+
+  hideProfile() {
+    this.setState({ showModal: false, speaker: null });
+  }
+
+  renderProfile() {
+    if (!this.state.showModal) {
+      return null;
+    }
+
+    const speaker = this.state.speaker
+
+    return (
+      <div>
+        <img src={require(`../../src/assets/speakers/${speaker.photo}`)} alt={speaker.name} className="br-100"/>
+        <p className="eau-book f-4 bright-green ttu">{speaker.name}</p>
+        <p className="f-c-t white">{speaker.role} @ {speaker.company}</p>
+        <p className="f-c-t white">{speaker.talk}</p>
+        { speaker.twitter &&
+          <a href={`https://twitter.com/${speaker.twitter}`} className="green4 dib h-2 w-2-5 br-100 pa2 bg-white mr2">
+            <Icon icon="twitter"></Icon>
+          </a>
+        }
+        { speaker.website &&
+          <a href={speaker.website} className="green4 dib h-2 w-2-5 br-100 pa2 bg-white ml2">
+            <Icon icon="link"></Icon>
+          </a>
+        }
+        <button onClick={this.hideProfile}>Close Modal</button>
+      </div>
+    )
   }
 
   render() {
-    const {
-      collection,
-    } = this.context
-
+    const { collection } = this.context
     let speakers = enhanceCollection(collection, {
       filter: { speaker: 'yes' }
     });
@@ -36,7 +78,7 @@ export default class Speakers extends React.Component {
               return (
                 <div className="speaker__container mb5 w5-l tc" key={`${speaker.name}-${i}`}>
                   { speaker.photo &&
-                    <img src={require(`../../src/assets/speakers/${speaker.photo}`)} alt={speaker.name} className="br-100"/>
+                    <img src={require(`../../src/assets/speakers/${speaker.photo}`)} alt={speaker.name} onClick={this.showProfile.bind(this, speaker)} className="br-100 pointer"/>
                   }
                   <p className="eau-book f-4 bright-green ttu">{speaker.name}</p>
                   <p className="f-c-t white">{speaker.role} @ {speaker.company}</p>
@@ -55,6 +97,13 @@ export default class Speakers extends React.Component {
               )
             })
           }
+          <Modal
+            closeTimeoutMS={150}
+            isOpen={this.state.showModal}
+            onRequestClose={this.hideProfile}
+          >
+            {this.renderProfile()}
+        </Modal>
         </div>
       </div>);
   }
