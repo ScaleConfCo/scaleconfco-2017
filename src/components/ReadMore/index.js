@@ -1,5 +1,4 @@
 import React, { PropTypes, Component } from 'react'
-// import Truncate from 'react-truncate'
 
 let Truncate
 if (typeof window !== 'undefined') {
@@ -48,6 +47,8 @@ class ReadMore extends Component {
 
         return (
             <p>
+            {
+                Truncate &&
                 <Truncate
                     lines={!expanded && lines}
                     ellipsis={(
@@ -57,9 +58,10 @@ class ReadMore extends Component {
                 >
                     {children}
                 </Truncate>
-                {!truncated && expanded && (
-                    <span><br/><a className="open-sans bright-green no-underline" href="#" onClick={this.toggleLines}>{less}</a></span>
-                )}
+            }
+            {!truncated && expanded && (
+                <span><br/><a className="open-sans bright-green no-underline" href="#" onClick={this.toggleLines}>{less}</a></span>
+            )}
             </p>
         );
     }

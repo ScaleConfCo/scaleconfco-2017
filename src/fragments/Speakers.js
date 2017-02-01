@@ -36,11 +36,10 @@ export default class Speakers extends React.Component {
     const speaker = this.state.speaker
 
     return (
-      <div>
-        <img src={require(`../../src/assets/speakers/${speaker.photo}`)} alt={speaker.name} className="br-100"/>
-        <p className="eau-book f-4 bright-green ttu">{speaker.name}</p>
-        <p className="f-c-t white">{speaker.role} @ {speaker.company}</p>
-        <p className="f-c-t white">{speaker.talk}</p>
+      <div className="center tc relative">
+        <a onClick={this.hideProfile} className="blue f1 tr db ph2 pointer absolute right-0">&#x2715;</a>
+        <img src={require(`../../src/assets/speakers/${speaker.photo}`)} alt={speaker.name} className="br-100 mt5"/>
+        <p className="eau-book f-4 blue ttu">{speaker.name}</p>
         { speaker.twitter &&
           <a href={`https://twitter.com/${speaker.twitter}`} className="green4 dib h-2 w-2-5 br-100 pa2 bg-white mr2">
             <Icon icon="twitter"></Icon>
@@ -51,7 +50,12 @@ export default class Speakers extends React.Component {
             <Icon icon="link"></Icon>
           </a>
         }
-        <button onClick={this.hideProfile}>Close Modal</button>
+        {
+          speaker.description &&
+          <p className="open-sans lh-copy w-80-l center">
+            { speaker.description }
+          </p>
+        }
       </div>
     )
   }

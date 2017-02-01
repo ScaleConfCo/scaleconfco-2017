@@ -30,7 +30,7 @@ export default class Hero extends Component {
             <a className="btn btn--home" href="https://ti.to/colombia-dev/scaleconfco">
               Buy your tickets now
             </a>
-            <div className="w-20">
+            <div className="w-20-l w-100">
               <SocialIcons />
             </div>
           </header>
