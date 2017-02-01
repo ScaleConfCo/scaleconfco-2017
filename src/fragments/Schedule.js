@@ -15,20 +15,90 @@ const day1 = [
 
 const day2 = [
   {
-    hour: "",
-    title: "Registration",
-    description: "Come pick up your badge and goodie bag, we have some surprises in store for you. "
+    hour: "8:30 AM",
+    title: "Registration"
   },
   {
-    hour: "",
-    title: "Opening words",
-    description: "It’s show time! Oficial welcome to the first tech conference on scalability in Colombia. Some opening words will be given by our organizer Juan David Castillo."
+    hour: "9:15 AM",
+    title: "Opening words"
   },
   {
-    hour: "",
-    title: "Building Bridges with Effective Devops",
-    speaker: "Katherine Daniels (ETSY)",
-    description: "Devops originally started as a way of enabling both developers and operations engineers to work better together, but over the years since its inception it's become much ..."
+    hour: "9:35 AM",
+    title: "To be announced",
+    speaker: "Katherine Daniels (ETSY)"
+  },
+  {
+    hour: "10:10 AM",
+    title: "Web scale envy",
+    speaker: "Yuji Kiriki (S4N)"
+  },
+  {
+    hour: "10:45 AM",
+    title: "Data-driven Postmortems",
+    speaker: "Jason Yee (Datadog)"
+  },
+  {
+    hour: "11:20 AM",
+    title: "Break"
+  },
+  {
+    hour: "11:40 AM",
+    title: "Distributed systems in practice, in theory",
+    speaker: "Aysylu Greenberg (Google)"
+  },
+  {
+    hour: "12:!5 AM",
+    title: "Introduccion a los Schedulers",
+    speaker: "Carlos León (Container Solutions)"
+  },
+  {
+    hour: "12:50 PM",
+    title: "Photo"
+  },
+  {
+    hour: "1:10 PM",
+    title: "Lunch"
+  },
+  {
+    hour: "2:25 PM",
+    title: "Addressing experience and acquiring proficiency/expertness in a rapidly-expanding and ever-moving industry",
+    speaker: "Carmen Hernandez (TravisCI)"
+  },
+  {
+    hour: "3:00 PM",
+    title: "Distributed computing with Ethereum and IPFS",
+    speaker: "Sergio Aristizibal Gomez (Twilio Inc.)"
+  },
+  {
+    hour: "3:35 PM",
+    title: "Break"
+  },
+  {
+    hour: "3:55 PM",
+    title: "Configuration Management for Legacy Services at Scale",
+    speaker: "Sally Lehman (Auth0)"
+  },
+  {
+    hour: "4:30 PM",
+    title: "What is DevOps",
+    speaker: "Armon Dadgar (Hashicorp)"
+  },
+  {
+    hour: "5:05 PM",
+    title: "To be announced",
+    speaker: "Jessie Frazelle (Google)"
+  },
+  {
+    hour: "5:40 PM",
+    title: "Closing marks"
+  },
+  {
+    hour: "5:50 PM",
+    title: "End"
+  },
+  {
+    hour: "7:00 PM",
+    title: "Closing event"
   }
 ]
 
@@ -45,7 +115,10 @@ const TimelineItem = ({ item }) => {
         speaker &&
         <p className="ml4 bright-green ttu open-sans f-s-d">{speaker}</p>
       }
-      <p className="ml4 white open-sans">{description}</p>
+      {
+        description &&
+        <p className="ml4 white open-sans">{description}</p>
+      }
     </li>
   )
 }
