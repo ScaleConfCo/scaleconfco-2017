@@ -101,6 +101,7 @@ export default class Speakers extends React.Component {
             closeTimeoutMS={150}
             isOpen={this.state.showModal}
             onRequestClose={this.hideProfile}
+            contentLabel="Modal"
           >
             {this.renderProfile()}
         </Modal>

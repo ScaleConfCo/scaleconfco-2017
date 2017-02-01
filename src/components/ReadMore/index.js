@@ -1,5 +1,10 @@
 import React, { PropTypes, Component } from 'react'
-import Truncate from 'react-truncate'
+// import Truncate from 'react-truncate'
+
+let Truncate
+if (typeof window !== 'undefined') {
+  Truncate = require('react-truncate')
+}
 
 class ReadMore extends Component {
     constructor(...args) {
@@ -46,14 +51,14 @@ class ReadMore extends Component {
                 <Truncate
                     lines={!expanded && lines}
                     ellipsis={(
-                      <span>...<p><a className="open-sans bright-green no-underline" href="#" onClick={this.toggleLines}>{more}</a></p></span>
+                      <span>...<br/><a className="open-sans bright-green no-underline" href="#" onClick={this.toggleLines}>{more}</a></span>
                     )}
                     onTruncate={this.handleTruncate}
                 >
                     {children}
                 </Truncate>
                 {!truncated && expanded && (
-                    <p><a className="open-sans bright-green no-underline" href="#" onClick={this.toggleLines}>{less}</a></p>
+                    <span><br/><a className="open-sans bright-green no-underline" href="#" onClick={this.toggleLines}>{less}</a></span>
                 )}
             </p>
         );
