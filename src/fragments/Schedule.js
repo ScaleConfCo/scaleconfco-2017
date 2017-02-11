@@ -94,7 +94,7 @@ class Schedule extends Component {
     })
 
     return (
-      <div className="mw80 center">
+      <div className="pa5 mw80 center">
         <h2 className="ttu bright-green eau-bold f-s-t">
           Schedule
         </h2>

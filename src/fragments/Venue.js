@@ -8,7 +8,7 @@ export default class Venue extends React.Component {
 
   render() {
     return (
-      <div className="mw80 center">
+      <div className="pa5 mw80 center">
         <div className="ph0-l pt0-l">
           <h2 className="section__title section__title--venue">Venue</h2>
           <div className="content__container">

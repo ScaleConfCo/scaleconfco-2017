@@ -14,25 +14,25 @@ import Schedule from "../../fragments/Schedule"
 const Homepage = (props) => {
   return (
     <Page { ...props }>
-      <div className="section mw80 center" id="about">
+      <div className="pa5 mw80 center" id="about">
         <About />
       </div>
-      <div className="section bg-speakers" id="speakers">
+      <div className="bg-speakers" id="speakers">
         <Speakers />
       </div>
-      <div className="section bg-dark-dark-blue" id="schedule">
+      <div className="bg-dark-dark-blue" id="schedule">
         <Schedule />
       </div>
-      <div className="section bg-sponsors" id="sponsors">
+      <div className="bg-sponsors" id="sponsors">
         <Sponsors />
       </div>
-      <div className="section bg-venue" id="venue">
+      <div className="bg-venue" id="venue">
         <Venue />
       </div>
       <div className="section mw80 center" id="scholarships">
         <Scholarships />
       </div>
-      <div className="section bg-coc" id="codeofconduct">
+      <div className="bg-coc" id="codeofconduct">
         <CodeOfConduct />
       </div>
       <div className="section gradient">

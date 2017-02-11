@@ -2,7 +2,7 @@ import React from 'react';
 
 const CodeOfConduct = () => {
   return (
-    <div className="mw80 center">
+    <div className="pa5 mw80 center">
       <h2 className="section__title section__title--coc">
         Our code of <span className="eau-book">conduct</span>
       </h2>

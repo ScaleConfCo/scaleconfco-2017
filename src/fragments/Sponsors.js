@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Sponsors = () => {
   return (
-    <div className="mw80 center">
+    <div className="pa5 mw80 center">
       <h2 className="section__title section__title--sponsors">Sponsors</h2>
       <div className="flex-l items-center-l mb4-l">
         <p className="sponsors__content" style={{ flex: 1}}>

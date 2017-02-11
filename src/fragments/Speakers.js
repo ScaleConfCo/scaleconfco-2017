@@ -68,7 +68,7 @@ export default class Speakers extends React.Component {
     });
 
     return (
-      <div className="tc mw80 center tl-l">
+      <div className="pa5 tc mw80 center tl-l">
         <h2 className="section__title section__title--speakers">
           Speakers
         </h2>
