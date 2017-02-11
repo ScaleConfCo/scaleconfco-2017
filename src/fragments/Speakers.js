@@ -2,6 +2,7 @@ import React, {PropTypes} from 'react';
 import Icon from '../components/Icon'
 import Modal from 'react-modal'
 import enhanceCollection from "phenomic/lib/enhance-collection"
+import ScheduleData from '../assets/schedule/data'
 
 export default class Speakers extends React.Component {
   static contextTypes = {
@@ -79,6 +80,8 @@ export default class Speakers extends React.Component {
         <div className="flex flex-wrap justify-center">
           {
             speakers.map((speaker, i) => {
+              speaker.talk = ScheduleData.dayTwo.find((session) => session.speaker === speaker.twitter).title
+
               return (
                 <div className="speaker__container mb5 w5-l tc" key={`${speaker.name}-${i}`}>
                   { speaker.photo &&
