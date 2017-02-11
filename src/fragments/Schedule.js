@@ -14,7 +14,7 @@ const TimelineItem = ({ item }) => {
       <p className="ml4 bright-green ttu eau-book f-4">{title}</p>
       {
         speaker &&
-        <p className="ml4 bright-green ttu open-sans f-s-d">{`${speaker.name} (${speaker.role})`}</p>
+        <p className="ml4 bright-green ttu open-sans f-s-d">{`${speaker.name} (${speaker.company})`}</p>
       }
       {
         description &&
