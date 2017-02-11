@@ -26,7 +26,7 @@ export default class Venue extends React.Component {
                 <br />
                 Medellín, Colombia
               </p>
-              <a href="http://www.rutanmedellin.org/" className="btn btn--venue">
+              <a href="http://www.rutanmedellin.org/" className="open-sans no-underline f-s-d ph2-5 pv0-8 mt3 dib bg-bright-green dark-dark-blue">
                 Website
               </a>
             </div>

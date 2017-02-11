@@ -16,18 +16,42 @@
   /*Date and place of event*/
   --dark-green: #2c6b5d;
 
-  /* FONT SIZES*/
+  /* SIZES */
+
+  /* Font sizes */
   --section-titles: 3.125rem;
   --content-text: 1rem;
   --section-description: 1.1875rem;
+
+  /* Padding */
+  --padding-horizontal: 2.5rem;
+  --padding-vertical: 0.8rem;
+}
+
+.ph2-5 {
+  padding-left: var(--padding-horizontal);
+  padding-right: var(--padding-horizontal);
+}
+
+.pv0-8 {
+  padding-top: var(--padding-vertical);
+  padding-bottom: var(--padding-vertical);
 }
 
 .bright-green {
   color: var(--bright-green);
 }
 
+.bg-medium-dark-blue {
+  background-color: var(--medium-dark-blue);
+}
+
+.bg-dark-blue {
+  background-color: var(--dark-blue);
+}
+
 .bg-blue {
-  color: var(--blue);
+  background-color: var(--blue);
 }
 
 .bg-bright-green {
@@ -49,6 +73,11 @@
 .bg-dark-dark-blue {
   background-color: var(--dark-dark-blue);
 }
+
+.dark-dark-blue {
+  color: var(--dark-dark-blue);
+}
+
 
 .f-s-t {
   font-size: var(--section-titles);
@@ -318,10 +347,6 @@ header{
 .btn--home{
   background-color: var(--dark-black-blue);
   margin-top: 2.3rem;
-}
-.btn--sponsors, .btn--venue, .btn--coc{
-  background-color: var(--bright-green);
-  color: var(--dark-black-blue);
 }
 
 .btn--coc{

@@ -19,7 +19,7 @@ const CodeOfConduct = () => {
         We invite all those who participate in ScaleConf Colombia to help us
         create safe and positive experiences for everyone.
       </p>
-      <a href="https://github.com/ScaleConfCo/code-of-conduct" className="btn btn--coc center">
+      <a href="https://github.com/ScaleConfCo/code-of-conduct" className="open-sans no-underline f-s-d ph2-5 pv0-8 mt3 dib bg-bright-green dark-dark-blue">
         Read Code of Conduct
       </a>
     </div>

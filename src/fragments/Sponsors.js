@@ -16,7 +16,7 @@ export const Sponsors = () => {
           </div>
         </div>
       </div>
-      <a href="mailto:hola@Scaleconfco.com?subject=I%20wanna%20sponsor%20ScaleConf%20Colombia!" className="btn btn--sponsors">
+      <a href="mailto:hola@Scaleconfco.com?subject=I%20wanna%20sponsor%20ScaleConf%20Colombia!" className="open-sans no-underline f-s-d ph2-5 pv0-8 mt3 dib bg-bright-green dark-dark-blue">
         Become a sponsor
       </a>
       <div className="mt6 w-25-l">

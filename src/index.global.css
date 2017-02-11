@@ -1,4 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import "~leaflet/dist/leaflet.css";
-@import "./styles.css";
 @import "~tachyons";
+@import "./styles.css";

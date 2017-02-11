@@ -10,6 +10,7 @@ import CodeOfConduct from "../../fragments/CodeOfConduct"
 import Sponsors from "../../fragments/Sponsors"
 import Organizers from "../../fragments/Organizers"
 import Schedule from "../../fragments/Schedule"
+import Information from "../../fragments/Information"
 
 const Homepage = (props) => {
   return (
@@ -32,8 +33,11 @@ const Homepage = (props) => {
       <div className="section mw80 center" id="scholarships">
         <Scholarships />
       </div>
-      <div className="bg-coc" id="codeofconduct">
+      <div className="bg-dark-blue" id="codeofconduct">
         <CodeOfConduct />
+      </div>
+      <div className="bg-medium-dark-blue">
+        <Information />
       </div>
       <div className="section gradient">
         <Organizers />
