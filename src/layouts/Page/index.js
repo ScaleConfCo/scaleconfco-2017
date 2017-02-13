@@ -53,6 +53,7 @@ const Page = (
           { head.title }
         </h1>
         <div className="medium-dark-blue open-sans lh-copy">
+          { children }
           {
             isLoading
             ? <Loading />

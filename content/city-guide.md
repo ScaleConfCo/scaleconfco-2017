@@ -47,7 +47,7 @@ The are a bunch of restaurants that are part of Ruta N's complex or a short walk
 
 Check the hotels page at scaleconfco.com for more detailed information about our recommended hotels. You can also find some great places to stay on Booking.com and Airbnb.
 
-<h1 class="eau-bold f-1-l blue bb-blue dib ttu">Medellín recibirá a ScaleConf Colombia</h1>
+<h1 class="eau-bold f1 blue bb-blue dib ttu">Medellín recibirá a ScaleConf Colombia</h1>
 
 Medellín es la segunda ciudad más grande de Colombia. Tiene más de 3 millones de habitantes y es la capital del departamento de Antioquia. El clima en Medellín es templado de ahí su apodo como la 'ciudad de la eterna primavera'. La temperatura diaria promedio es de 22ºC, cambia en el rango de los 15 a los 30 grados Celsius.
 

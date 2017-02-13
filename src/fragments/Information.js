@@ -16,7 +16,7 @@ const Information = () => {
         </div>
         <div className="w50 w-30-l bright-green eau-book f-1-75">
           <p>
-            Hotels and Hostals
+            <Link to="/hotels" className="no-underline bright-green">Hotels and Hostals</Link>
           </p>
           <p>
              <Link to="/city-guide" className="no-underline bright-green">City Guide</Link>
