@@ -49,10 +49,10 @@ const Page = (
         meta={ meta } />
       <Header />
       <div className="mw80 center pa5">
-        <h1 className="eau-bold f-1-l blue bb-blue dib">
+        <h1 className="eau-bold f-1-l blue bb-blue dib ttu">
           { head.title }
         </h1>
-        <div className="medium-dark-blue open-sans">
+        <div className="medium-dark-blue open-sans lh-copy">
           {
             isLoading
             ? <Loading />

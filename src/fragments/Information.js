@@ -19,7 +19,7 @@ const Information = () => {
             Hotels and Hostals
           </p>
           <p>
-            City Guide
+             <Link to="/city-guide" className="no-underline bright-green">City Guide</Link>
           </p>
           <p>
             <Link to="/faq" className="no-underline bright-green">FAQ</Link>
