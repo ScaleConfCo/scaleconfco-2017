@@ -44,7 +44,6 @@ const AppContainer = (props) => {
     <Container>
       <GATracker params={ props.params }>
         <DefaultHeadMeta />
-        <Header />
         <Content>
           { props.children }
         </Content>

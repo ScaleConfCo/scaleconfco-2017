@@ -1,6 +1,6 @@
 import React from "react"
 
-import Page from "../Page"
+import Header from "../../components/Header"
 import Contact from "../../fragments/Contact"
 import About from "../../fragments/About"
 import Speakers from "../../fragments/Speakers"
@@ -12,9 +12,10 @@ import Organizers from "../../fragments/Organizers"
 import Schedule from "../../fragments/Schedule"
 import Information from "../../fragments/Information"
 
-const Homepage = (props) => {
+const Homepage = () => {
   return (
-    <Page { ...props }>
+    <div>
+      <Header />
       <div className="pa5 mw80 center" id="about">
         <About />
       </div>
@@ -45,7 +46,7 @@ const Homepage = (props) => {
       <div className="section pv5 ph4">
         <Contact />
       </div>
-    </Page>
+    </div>
   )
 }
 

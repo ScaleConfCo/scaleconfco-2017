@@ -1,4 +1,5 @@
-import React from 'react';
+import React from 'react'
+import { Link } from "phenomic"
 
 const Information = () => {
   return (
@@ -21,7 +22,7 @@ const Information = () => {
             City Guide
           </p>
           <p>
-            FAQ
+            <Link to="/faq" className="no-underline bright-green">FAQ</Link>
           </p>
         </div>
       </div>

@@ -1,7 +1,9 @@
 import React, { PropTypes } from "react"
 import Helmet from "react-helmet"
 import warning from "warning"
-import { joinUri } from "phenomic"
+import { BodyContainer, joinUri, Link } from "phenomic"
+import Loading from "../../components/Loading"
+import Header from "../../components/Header"
 
 const Page = (
   {
@@ -44,9 +46,21 @@ const Page = (
     <div>
       <Helmet
         title={ metaTitle }
-        meta={ meta }
-      />
-      { children }
+        meta={ meta } />
+      <Header />
+      <div className="mw80 center pa5">
+        <h1 className="eau-bold f-1-l blue bb-blue dib">
+          { head.title }
+        </h1>
+        <div className="medium-dark-blue open-sans">
+          {
+            isLoading
+            ? <Loading />
+            : <BodyContainer>{ body }</BodyContainer>
+          }
+        </div>
+        <Link to="/" className="open-sans no-underline f-s-d ph2-5 pv0-8 mt3 dib bg-blue white">Back</Link>
+      </div>
     </div>
   )
 }

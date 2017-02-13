@@ -28,6 +28,14 @@
   --padding-vertical: 0.8rem;
 }
 
+.blue {
+  color: var(--blue);
+}
+
+.bb-blue {
+  border-bottom: 1px solid var(--blue);
+}
+
 .ph2-5 {
   padding-left: var(--padding-horizontal);
   padding-right: var(--padding-horizontal);
@@ -40,6 +48,10 @@
 
 .bright-green {
   color: var(--bright-green);
+}
+
+.medium-dark-blue {
+  color: var(--medium-dark-blue);
 }
 
 .bg-medium-dark-blue {
