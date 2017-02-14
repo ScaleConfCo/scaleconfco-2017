@@ -23,6 +23,10 @@ export const Sponsors = () => {
         <p className="open-sans bright-green f-30 mb1 bb-bright-green">Partners</p>
         <img src={require('../../src/assets/images/sponsors/rutan.png')} alt="Ruta N" className="w-100-l"/>
       </div>
+      <div className="w-25-l">
+        <p className="open-sans bright-green f-30 mb1 bb-bright-green">Startup</p>
+        <img src={require('../../src/assets/images/sponsors/komet.png')} alt="Komet Sales" className="w-100-l"/>
+      </div>
     </div>
   );
 }
