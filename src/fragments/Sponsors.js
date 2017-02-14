@@ -19,9 +19,15 @@ export const Sponsors = () => {
       <a href="mailto:hola@Scaleconfco.com?subject=I%20wanna%20sponsor%20ScaleConf%20Colombia!" className="open-sans no-underline f-s-d ph2-5 pv0-8 mt3 dib bg-bright-green dark-dark-blue">
         Become a sponsor
       </a>
-      <div className="mt6 w-25-l">
-        <p className="open-sans bright-green f-30 mb1 bb-bright-green">Partners</p>
-        <img src={require('../../src/assets/images/sponsors/rutan.png')} alt="Ruta N" className="w-100-l"/>
+      <div className="flex flex-wrap">
+        <div className="mt6 w-25-l mr10">
+          <p className="open-sans bright-green f-30 mb1 bb-bright-green">Partners</p>
+          <img src={require('../../src/assets/images/sponsors/rutan.png')} alt="Ruta N" className="w-100-l"/>
+        </div>
+        <div className="mt6 w-25-l">
+          <p className="open-sans bright-green f-30 mb1 bb-bright-green">Starup</p>
+          <img src={require('../../src/assets/images/sponsors/komet.png')} alt="Komet Sales" className="w-100-l"/>
+        </div>
       </div>
     </div>
   );

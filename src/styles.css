@@ -111,6 +111,10 @@
   height: 4px;
 }
 
+.mr10{
+  margin-right: 10em;
+}
+
 .timeline::before {
   content: '';
   position: absolute;
