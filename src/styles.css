@@ -90,7 +90,6 @@
   color: var(--dark-dark-blue);
 }
 
-
 .f-s-t {
   font-size: var(--section-titles);
 }
@@ -445,6 +444,14 @@ header{
   .bl--solid-l {
     border-left-style: solid;
   }
+
+  .bl--white-l {
+    border-left-color: white;
+  }
+
+  .f-s-t-l {
+    font-size: 2.5rem;
+  }
 }
 
 @media(max-width:900px){
@@ -497,6 +504,10 @@ header{
   }
   .home__title--scaleconf{
     margin-top: 8.5rem;
+  }
+
+  .f-s-t {
+    font-size: 2.5rem;
   }
 }
 

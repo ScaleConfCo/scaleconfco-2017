@@ -5,7 +5,7 @@ const Information = () => {
   return (
     <div className="pa5 mw80 center">
       <div className="flex flex-column flex-row-l">
-        <div className="w-70-l w-100">
+        <div className="w-60-l w-100 pr5-l">
           <h2 className="eau-book white ttu f-s-t">
             <span className="eau-bold">More</span> Information
           </h2>
@@ -14,7 +14,7 @@ const Information = () => {
             Check out these useful links:
           </p>
         </div>
-        <div className="w-100 w-30-l bright-green eau-book f-1-75">
+        <div className="w-100 w-40-l bright-green eau-book f-1-75 bl--solid-l bw1 bl--white-l pl5-l">
           <p>
             <Link to="/hotels" className="no-underline bright-green">Hotels and Hostals</Link>
           </p>
