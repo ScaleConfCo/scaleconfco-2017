@@ -22,7 +22,7 @@ const Hotel = ({ hotel }) => {
   return (
     <div className="medium-dark-blue open-sans lh-copy flex">
      { photo &&
-       <img src={photo} alt={name} />
+       <img src={require(`../../../src/assets/images/hotels/${photo}`)} alt={name} className="ma3 ml0 mw6 h-auto"/>
      }
      <div>
       <p>{ htype } : { name }</p>

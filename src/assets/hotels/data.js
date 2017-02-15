@@ -5,7 +5,7 @@ export default [
     contact: "natalia.rios@diezhotel.com",
     discount: "scaleconfco",
     rate: "$179,9000 COP + seguro hotelero $8,330 COP + impuesto (aprox. $80 USD) - single occupancy",
-    photo: "",
+    photo: "diez.png",
     website: "",
   },
   {
@@ -13,7 +13,7 @@ export default [
     cost: "$10 USD (a bed)/night",
     discount: "scaleconfco",
     note: "Geo Hostel is a 2 minutes walk to Diez Hotel",
-    photo: "",
+    photo: "geo.png",
     url: "http://geohostel.com/site/eng",
     type: "hostal"
   },
@@ -22,7 +22,7 @@ export default [
     address: "Carrera 35 #7 - 72, El Poblado, Medellin",
     note: "Casa Le Fleur is a 5 minutes walk to the Diez Hotel",
     cost: "$40 USD/night - single occupancy",
-    photo: "",
+    photo: "lefleur.png",
     url: "http://www.hotellafleurmedellin.com/"
   },
   {
@@ -30,7 +30,7 @@ export default [
     address: "Cra 34 No. 7 - 109. Vía Provenza",
     note: "InHouse is a 4 minutes walk to the Diez Hotel",
     cost: "$60 USD/night - single occupancy",
-    photo: "",
+    photo: "inhouse.png",
     url: "http://www.inhousethehotel.com/"
   }
 ]

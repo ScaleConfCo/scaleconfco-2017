@@ -26,7 +26,7 @@ const Scholarships = () => {
         </a>
         <br/>
         <a href="https://donorbox.org/scaleconf-colombia-s-diversity-program" className="btn btn--coc center bg-blue white">
-          Support diversity ticket
+          Sponsor diversity ticket(s)
         </a>
       </div>
       <img src={require('../../src/assets/images/diversity.png')} alt="ScaleConf Colombia Scholarships" className="w-100 w-40-l dib-l scholarships__image"/>
