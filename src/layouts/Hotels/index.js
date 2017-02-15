@@ -60,7 +60,7 @@ const Hotels = (props) => {
   return (
     <Page { ...props }>
       <div>
-        <Map />
+        <Map coordinates={HotelsData.map(({ coordinates, name }) => [coordinates, name])} />
         { HotelsData.map((hotel, i) => <Hotel hotel={hotel} key={i} />) }
       </div>
     </Page>
