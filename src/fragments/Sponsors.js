@@ -12,6 +12,12 @@ const data = {
     info: 'Having a work-life balance while innovating is a priority for us! Our workplace nurtures growth while providing a fun environment where we challenge and help each other to take on the floral industry with a comprehensive software.',
     twitter: 'kometsales',
     url: 'https://www.kometsales.com/'
+  },
+  'bizagi': {
+    'info': 'Live. Work. Create. Innovate. Time to digital. Time to join us.',
+    'facebook': 'bizagiengineering',
+    'twitter': 'BizagiEng',
+    'url': 'http://www.bizagi.com'
   }
 }
 
@@ -51,6 +57,12 @@ export default class Sponsors extends React.Component {
         <a href={`https://twitter.com/${sponsor.twitter}`} className="green4 dib h-2 w-2-5 br-100 pa2 bg-white mr2">
           <Icon icon="twitter"></Icon>
         </a>
+         {
+          sponsor.facebook &&
+          <a href={`https://facebook.com/${sponsor.facebook}`} className="green4 dib h-2 w-2-5 br-100 pa2 bg-white ml2">
+            <Icon icon="link"></Icon>
+          </a>
+        }
         <a href={sponsor.url} className="green4 dib h-2 w-2-5 br-100 pa2 bg-white ml2">
           <Icon icon="link"></Icon>
         </a>
@@ -79,12 +91,12 @@ export default class Sponsors extends React.Component {
         </a>
         <div className="flex justify-around flex-column items-center tc mt5">
           <div className="w-50-l">
-            <p className="open-sans bright-green f-30 mb1 bb-bright-green">Gold</p>
-            <img src={require('../../src/assets/images/sponsors/toptal.png')} alt="Toptal" className="w-100-l pointer bg-white" onClick={this.showModal.bind(this, 'toptal')}/>
+            <p className="open-sans bright-green f-30 mb1 bb-bright-green">Platinum</p>
+            <img src={require('../../src/assets/images/sponsors/bizagi.png')} alt="Bizagi" className="w-100-l bg-white pointer" onClick={this.showModal.bind(this, 'bizagi')} />
           </div>
           <div className="w-40-l">
-            <p className="open-sans bright-green f-30 mb1 bb-bright-green">Platinum</p>
-            <img src={require('../../src/assets/images/sponsors/bizagi.png')} alt="Bizagi" className="w-100-l bg-white" />
+            <p className="open-sans bright-green f-30 mb1 bb-bright-green">Gold</p>
+            <img src={require('../../src/assets/images/sponsors/toptal.png')} alt="Toptal" className="w-100-l pointer bg-white" onClick={this.showModal.bind(this, 'toptal')}/>
           </div>
           <div className="w-30-l">
             <p className="open-sans bright-green f-30 mb1 bb-bright-green">Partners</p>
