@@ -37,7 +37,6 @@ TimelineRoom.propTypes = {
 
 const TimelineItem = ({ item }) => {
   const { hour, title, speaker, description } = item
-  const name = item.name ? item.name : false
   const rooms = item.rooms ? item.rooms : false
 
   return (
