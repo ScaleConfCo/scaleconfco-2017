@@ -1,14 +1,60 @@
 export default {
   "dayOne": [
     {
-      hour: "",
+      hour: "8:45 AM",
       title: "Registration",
       description: "Come pick up your badge and goodie bag, we have some surprises in store for you."
     },
     {
-      hour: "",
-      title: "Workshops",
-      description: "Workshops to be announced soon. Stay tuned!"
+      hour: "9:30 AM",
+      rooms: [
+        {
+          title: "Manejar infraestructura en Google Cloud con Terraform",
+          name: "Carlos Leon",
+          description: "Este taller está dirigido para todos aquellos que han oído hablar sobre Terraform pero no han tenido aún la oportunidad de experimentar con la herramienta. En este espacio de una hora y media hablaremos sobre qué es Terraform, para qué casos aplica mejor, casos de uso comunes y pondremos en práctica la teoría básica de Terraform para crear múltiples ambientes en Google Cloud. Es necesario tener experiencia en Unix y entendimiento básico de tecnologías PaaS como AWS, Digital Ocean, Linode y/o Google Cloud."
+        },
+        {
+          title: "Functions-as-a-Service: A modern way to build applications",
+          name: "Pedro Nasser",
+          description: "Serverless or FaaS architectures are one of the hottest trends in cloud computing this year, and for good reason. There are several technical capabilities and business factors coming together to make this approach very compelling from both an application development and deployment cost perspective. By breaking down monolithic applications into smaller services, you can develop, manage, and scale each service independently. FaaS takes this a step further by breaking things down even smaller. So, what is Serverless/FaaS?  What are functions and how are they related to microservices development?  In this talk we will present and demonstrate how to build and scale distributed workloads using serverless technology."
+        }
+      ]
+    },
+    {
+      hour: "11:15 AM",
+      title: "Coffee/Snack Break"
+    },
+    {
+      hour: "11:35 AM",
+      rooms: [
+        {
+          title: "Deploying microservices to the cloud",
+          name: "Camilo Hernandez",
+          description: "In this workshop, you will deploy a functional “Cloud native application” based on microservices, using, Docker containers, Azure, AWS, Google App Engine, Kubernetes and DCOS. Containers are easy for someone who spends significant amount of time immersed in operations work. But for most of the people, getting start with this stuff turned out to be hard. Participants will learn about a number of concepts and tools in this workshop to build and deploy containers to the cloud."
+        },
+        {
+          title: "Deep Learning Escalable con TensorFlow",
+          name: "Cristian Garcia",
+          description: "El Deep Learning es uno de los temas más emocionantes en el mundo de la tecnología hoy en dia ya que le está dando a las máquinas la capacidad de realizar tareas cognitivas avanzadas. Google es una de las compañías que más ha reconocido esto y por ello ha invertido millones para crear TensorFlow, una librería de computación distribuidas capaz de correr tareas complejas de Deep Learning."
+        }
+      ]
+    },
+    {
+      hour: "1:05 PM",
+      title: "Lunch"
+    },
+    {
+      hour: "2:30 PM",
+      rooms: [
+        {
+          title: "Cloud Native: from `git push` to merge to deploy",
+          name: "Carmen Andoh"
+        },
+        {
+          title: "Create your first decentralized application with Ethereum",
+          name: "Sergio Arisitizabal"
+        }
+      ]
     }
   ],
   "dayTwo": [

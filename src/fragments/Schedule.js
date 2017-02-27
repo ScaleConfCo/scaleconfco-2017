@@ -3,18 +3,19 @@ import ReadMore from '../components/ReadMore'
 import enhanceCollection from "phenomic/lib/enhance-collection"
 import ScheduleData from '../assets/schedule/data'
 
-const TimelineItem = ({ item }) => {
-  const { hour, title, speaker, description } = item
+const TimelineRoom = ({ room, index }) => {
+  const { title, speaker, description, name } = room
   return (
-    <li className="relative timeline-item h-100">
-      {
-        hour &&
-        <time className="ml4 bright-green open-sans f-1-25">{hour}</time>
-      }
+    <div>
+      <p className="ml4 white open-sans mt4">Room {index}</p>
       <p className="ml4 bright-green ttu eau-book f-4">{title}</p>
       {
         speaker &&
         <p className="ml4 bright-green ttu open-sans f-s-d">{`${speaker.name} (${speaker.company})`}</p>
+      }
+      {
+        name &&
+        <p className="ml4 bright-green ttu open-sans f-s-d">{name}</p>
       }
       {
         description &&
@@ -23,6 +24,48 @@ const TimelineItem = ({ item }) => {
             {description}
           </ReadMore>
         </div>
+      }
+    </div>
+  )
+}
+
+TimelineRoom.propTypes = {
+  room: PropTypes.object.isRequired,
+  index: PropTypes.number.isRequired
+}
+
+
+const TimelineItem = ({ item }) => {
+  const { hour, title, speaker, description } = item
+  const name = item.name ? item.name : false
+  const rooms = item.rooms ? item.rooms : false
+
+  return (
+    <li className="relative timeline-item h-100">
+      {
+        hour &&
+        <time className="ml4 bright-green open-sans f-1-25">{hour}</time>
+      }
+      {
+        rooms ?
+        rooms.map((room, i) => <TimelineRoom room={room} index={i} key={i} />)
+        : (
+            <div>
+              <p className="ml4 bright-green ttu eau-book f-4">{title}</p>
+              {
+                speaker &&
+                <p className="ml4 bright-green ttu open-sans f-s-d">{`${speaker.name} (${speaker.company})`}</p>
+              }
+              {
+                description &&
+                <div className="ml4 white open-sans lh-copy">
+                  <ReadMore>
+                    {description}
+                  </ReadMore>
+                </div>
+              }
+            </div>
+          )
       }
     </li>
   )
@@ -101,7 +144,6 @@ class Schedule extends Component {
         <div className="flex flex-wrap flex-row-ns">
           <Day date="March 24" schedule={newSchedule[0]} index={"1"} />
           <Day date="March 25" schedule={newSchedule[1]} index={"2"} />
-
         </div>
       </div>
     )
