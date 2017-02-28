@@ -63,9 +63,25 @@ export default class Speakers extends React.Component {
 
   render() {
     const { collection } = this.context
-    let speakers = enhanceCollection(collection, {
+    let rawSpeakers = enhanceCollection(collection, {
       filter: { speaker: 'yes' }
-    });
+    })
+
+    let speakers = rawSpeakers.map((speaker) => {
+      let workshop = false
+      const talk = ScheduleData.dayTwo.find((session) => session.speaker === speaker.twitter)
+      for(let session of ScheduleData.dayOne) {
+        if(session.rooms) {
+          if(session.rooms[speaker.twitter]) {
+            workshop = session.rooms[speaker.twitter]
+            break
+          }
+        }
+      }
+
+      speaker.talk = talk ? talk.title : workshop ? workshop.title : ''
+      return speaker
+    })
 
     return (
       <div className="pa5 tc mw80 center tl-l">
@@ -80,8 +96,6 @@ export default class Speakers extends React.Component {
         <div className="flex flex-wrap justify-center">
           {
             speakers.map((speaker, i) => {
-              speaker.talk = ScheduleData.dayTwo.find((session) => session.speaker === speaker.twitter).title
-
               return (
                 <div className="speaker__container mb5 w5-l tc" key={`${speaker.name}-${i}`}>
                   { speaker.photo &&

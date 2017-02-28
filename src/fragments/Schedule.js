@@ -4,18 +4,14 @@ import enhanceCollection from "phenomic/lib/enhance-collection"
 import ScheduleData from '../assets/schedule/data'
 
 const TimelineRoom = ({ room, index }) => {
-  const { title, speaker, description, name } = room
+  const { title, speaker, description } = room
   return (
     <div>
       <p className="ml4 white open-sans mt4">Room {index}</p>
       <p className="ml4 bright-green ttu eau-book f-4">{title}</p>
       {
         speaker &&
-        <p className="ml4 bright-green ttu open-sans f-s-d">{`${speaker.name} (${speaker.company})`}</p>
-      }
-      {
-        name &&
-        <p className="ml4 bright-green ttu open-sans f-s-d">{name}</p>
+        <p className="ml4 bright-green ttu open-sans f-s-d">{speaker.name} {speaker.company ? `(${speaker.company})` : ''}</p>
       }
       {
         description &&
@@ -129,6 +125,17 @@ class Schedule extends Component {
           return {
             ...session,
             speaker: speakersData[session.speaker]
+          }
+        }
+        if(session.rooms) {
+          return {
+            ...session,
+            rooms: Object.keys(session.rooms).map((room) => {
+              return {
+                ...session.rooms[room],
+                speaker: speakersData[room]
+              }
+            })
           }
         }
         return session
