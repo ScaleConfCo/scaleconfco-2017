@@ -1,9 +1,9 @@
 ---
 name: Pedro Nasser
 company: Iron.io
-role:
+role: Gopher
 twitter: pedroncs
-photo:
+photo: pedro.png
 speaker: yes
 ---
 Pedro Nasser
