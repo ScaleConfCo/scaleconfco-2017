@@ -50,6 +50,9 @@ export default class Nav extends React.Component {
               <li className="pv3">
                 <a onClick={this.toggle} href="#codeofconduct" className="nav__opt">Code of conduct</a>
               </li>
+              <li className="pv3">
+                <a onClick={this.toggle} href="/hotels" className="nav__opt">Hotels</a>
+              </li>
             </ul>
           </nav>
         </div>
