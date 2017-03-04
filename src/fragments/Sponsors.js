@@ -8,16 +8,22 @@ const data = {
     twitter: 'toptal',
     url: ' https://www.toptal.com/'
   },
+  'ScalablePath': {
+    info: 'Scalable Path is an international network of 3000+ software developers and designers.  We connect companies in the U.S. with talent in Latin America.  We are hiring.  Create your profile today at https://www.scalablepath.com/apply',
+    facebook: 'ScalablePath',
+    twitter: 'ScalablePath',
+    url: 'https://www.scalablepath.com'
+  },
   'komet': {
     info: 'Having a work-life balance while innovating is a priority for us! Our workplace nurtures growth while providing a fun environment where we challenge and help each other to take on the floral industry with a comprehensive software.',
     twitter: 'kometsales',
     url: 'https://www.kometsales.com/'
   },
   'bizagi': {
-    'info': 'Live. Work. Create. Innovate. Time to digital. Time to join us.',
-    'facebook': 'bizagiengineering',
-    'twitter': 'BizagiEng',
-    'url': 'http://www.bizagi.com'
+    info: 'Live. Work. Create. Innovate. Time to digital. Time to join us.',
+    facebook: 'bizagiengineering',
+    twitter: 'BizagiEng',
+    url: 'http://www.bizagi.com'
   }
 }
 
@@ -60,7 +66,7 @@ export default class Sponsors extends React.Component {
          {
           sponsor.facebook &&
           <a href={`https://facebook.com/${sponsor.facebook}`} className="green4 dib h-2 w-2-5 br-100 pa2 bg-white ml2">
-            <Icon icon="link"></Icon>
+            <Icon icon="facebook"></Icon>
           </a>
         }
         <a href={sponsor.url} className="green4 dib h-2 w-2-5 br-100 pa2 bg-white ml2">
@@ -97,6 +103,7 @@ export default class Sponsors extends React.Component {
           <div className="w-40-l">
             <p className="open-sans bright-green f-30 mb1 bb-bright-green">Gold</p>
             <img src={require('../../src/assets/images/sponsors/toptal.png')} alt="Toptal" className="w-100-l pointer bg-white" onClick={this.showModal.bind(this, 'toptal')}/>
+            <img src={require('../../src/assets/images/sponsors/ScalablePath_logo_lightBG_stacked.png')} alt="ScalablePath" className="w-100-l pointer bg-white" onClick={this.showModal.bind(this, 'ScalablePath')}/>
           </div>
           <div className="w-30-l">
             <p className="open-sans bright-green f-30 mb1 bb-bright-green">Partners</p>
