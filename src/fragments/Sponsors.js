@@ -24,6 +24,10 @@ const data = {
     facebook: 'bizagiengineering',
     twitter: 'BizagiEng',
     url: 'http://www.bizagi.com'
+  },
+  'S4N': {
+    info: 'We transform organizations through modern technologies. Building high quality software focused on people.',
+    url: 'http://www.s4n.co'
   }
 }
 
@@ -60,10 +64,13 @@ export default class Sponsors extends React.Component {
         <p className="open-sans lh-copy w-80-l center">
           { sponsor.info }
         </p>
-        <a href={`https://twitter.com/${sponsor.twitter}`} className="green4 dib h-2 w-2-5 br-100 pa2 bg-white mr2">
-          <Icon icon="twitter"></Icon>
-        </a>
-         {
+        {
+          sponsor.twitter &&
+          <a href={`https://twitter.com/${sponsor.twitter}`} className="green4 dib h-2 w-2-5 br-100 pa2 bg-white mr2">
+            <Icon icon="twitter"></Icon>
+          </a>
+        }
+        {
           sponsor.facebook &&
           <a href={`https://facebook.com/${sponsor.facebook}`} className="green4 dib h-2 w-2-5 br-100 pa2 bg-white ml2">
             <Icon icon="facebook"></Icon>
@@ -112,7 +119,7 @@ export default class Sponsors extends React.Component {
           <div className="w-25-l">
             <p className="open-sans bright-green f-30 mb1 bb-bright-green">Startup</p>
             <img src={require('../../src/assets/images/sponsors/komet.png')} alt="Komet Sales" className="w-100-l pointer" onClick={this.showModal.bind(this, 'komet')}/>
-            <img src={require('../../src/assets/images/sponsors/s4n.png')} alt="S4N" className="w-100-l"/>
+            <img src={require('../../src/assets/images/sponsors/logo-s4n-blanco-fondo-transparente.png')} alt="S4N" className="w-100-l pointer" onClick={this.showModal.bind(this, 'S4N')}/>
           </div>
         </div>
         <Modal
