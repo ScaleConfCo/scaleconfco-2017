@@ -38,6 +38,12 @@ export const Organizers = () => {
             Nicolás Hock
           </p>
         </div>
+        <div className="mb3 tc dib-l mh4-l w4-l">
+          <img src={require('../../src/assets/organizers/jdavidavendano.png')} alt="" className="br-100 w4 h4 cover"/>
+          <p className="organizers__name">
+            Jonathan Avendaño
+          </p>
+        </div>
       </div>
     </div>
   );
