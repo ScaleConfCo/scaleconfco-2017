@@ -11,10 +11,6 @@ export default {
         'mongrelion': {
           title: "Manejar infraestructura en Google Cloud con Terraform",
           description: "Este taller está dirigido para todos aquellos que han oído hablar sobre Terraform pero no han tenido aún la oportunidad de experimentar con la herramienta. En este espacio de una hora y media hablaremos sobre qué es Terraform, para qué casos aplica mejor, casos de uso comunes y pondremos en práctica la teoría básica de Terraform para crear múltiples ambientes en Google Cloud. Es necesario tener experiencia en Unix y entendimiento básico de tecnologías PaaS como AWS, Digital Ocean, Linode y/o Google Cloud."
-        },
-        "pedroncs": {
-          title: "Functions-as-a-Service: A modern way to build applications",
-          description: "Serverless or FaaS architectures are one of the hottest trends in cloud computing this year, and for good reason. There are several technical capabilities and business factors coming together to make this approach very compelling from both an application development and deployment cost perspective. By breaking down monolithic applications into smaller services, you can develop, manage, and scale each service independently. FaaS takes this a step further by breaking things down even smaller. So, what is Serverless/FaaS?  What are functions and how are they related to microservices development?  In this talk we will present and demonstrate how to build and scale distributed workloads using serverless technology."
         }
       }
     },
@@ -130,11 +126,6 @@ export default {
       title: "What is DevOps",
       speaker: "armon",
       description: "Most startups are in a race, either against competitors or burn rates to deliver products. This demands an increased focus on agility of delivery, which is a perfect fit for DevOps. In this talk, we discuss what DevOps is, and how it affects the people, processes, and tools used to deliver an app. Specifically, we discuss DevOps as a process for delivering software, and optimizing for agility instead of risk. DevOps applies to startups as well as Fortune 500's, and we will cover some pragmatic ways to get started and add value without getting caught up with all the shiny new tools."
-    },
-    {
-      hour: "5:05 PM",
-      title: "To be announced",
-      speaker: "jessfraz"
     },
     {
       hour: "5:40 PM",
