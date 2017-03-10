@@ -28,6 +28,10 @@ const data = {
   'S4N': {
     info: 'We transform organizations through modern technologies. Building high quality software focused on people.',
     url: 'http://www.s4n.co'
+  },
+  'TODO1': {
+    info: 'TODO1 es una compañía líder en la creación, implementación y operación de soluciones digitales omnicanal, para compañías del sector financiero y del ecosistema de negocio FINTECH.',
+    url: 'http://www.todo1services.com/'
   }
 }
 
@@ -120,6 +124,7 @@ export default class Sponsors extends React.Component {
             <p className="open-sans bright-green f-30 mb1 bb-bright-green">Startup</p>
             <img src={require('../../src/assets/images/sponsors/komet.png')} alt="Komet Sales" className="w-100-l pointer" onClick={this.showModal.bind(this, 'komet')}/>
             <img src={require('../../src/assets/images/sponsors/logo-s4n-blanco-fondo-transparente.png')} alt="S4N" className="w-100-l pointer" onClick={this.showModal.bind(this, 'S4N')}/>
+            <img src={require('../../src/assets/images/sponsors/todo1.png')} alt="TODO1" className="w-100-l pointer" onClick={this.showModal.bind(this, 'TODO1')}/>
           </div>
         </div>
         <Modal
