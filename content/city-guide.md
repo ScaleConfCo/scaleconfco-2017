@@ -6,14 +6,15 @@ Medellín is the second largest city in Colombia. It has over 3 million people a
 
 **Airports**</br>
 
-Medellin has two main airports - Jose Maria Cordova International Airport (<a href="https://goo.gl/maps/nFGmaWQ5MoP2">map</a>) and Enrique Olaya Herrera Airport (<a href="https://goo.gl/maps/EbnZTxBzckn">map</a>).
-The international airport (Jose Maria Cordova) is located about 29km from Medellin in Rionegro, a 45 minute car ride down a windy road.
-The local airport (Enrique Olaya Herrera) is located within the city although only small regional flights depart/land from there.
+Medellin has two main airports:
+* The international airport (Jose Maria Cordova) (<a href="https://goo.gl/maps/nFGmaWQ5MoP2">map</a>) is located about 29km from Medellin in Rionegro, a 45 minute car ride down a windy road.
+* The local airport (Enrique Olaya Herrera) (<a href="https://goo.gl/maps/EbnZTxBzckn">map</a>) is located within the city although only small regional flights depart/land from there.
 
 **Getting from Jose Maria Cordova airport to the city**</br>
 
-Taxi - You will see blue and white taxis located outside the doors when you exit the airport. Although all taxis in Medellin use taxi-meters, the ride to/from the airport is fixed at $70.000COP (Approximately $28 USD) or a bit more depending on which part of the city your are going to. However, just to be on the safe side, make sure to ask the taxi driver the price before leaving the airport.
-Colectivos (small buses) - These are shared taxis or mini-buses also located just outside when you exit. Colectivos cost $15.000 COP per person from the airport to El Poblado.
+* Taxi - You will see blue and white taxis located outside the doors when you exit the airport. Although all taxis in Medellin use taxi-meters, the ride to/from the airport is fixed at $70.000COP (Approximately $28 USD) or a bit more depending on which part of the city your are going to. However, just to be on the safe side, make sure to ask the taxi driver the price before leaving the airport.
+* Colectivos (small buses) - These are shared taxis or mini-buses also located just outside when you exit.
+Colectivos cost $15.000 COP per person from the airport to El Poblado.
 Note: Colectivos will NOT drop you off directly at your destination. Instead they will drop you in front of San Diego Mall. We suggest taking a taxi from this point to your destination.
 
 **Getting around the city**</br>
@@ -41,8 +42,9 @@ The best coffeeshops and co-working spaces are located around the Poblado area, 
 
 **Venue**</br>
 
-The conference will be held at <a href="http://www.rutanmedellin.org/es/">Complejo Ruta N</a>, Calle 67 Nº 52-20 (<a href="http://scaleconfco.com#venue">check the map</a>) which is easily accessible by <a href="http://www.uber.com">uber</a>, taxi (you can use <a href="http://www.easytaxi.com/co/">Easy taxi</a>, <a href="https://tappsi.co/">Tappsi</a> or <a href="https://citytaxiapp.co/">CityTaxi</a>), bus and a 5 minute walk away from Universidad Metro station.
-The are a bunch of restaurants that are part of Ruta N's complex or a short walking distance in which you will be able to find lunch.
+The conference will be held at <a href="http://www.rutanmedellin.org/es/">Complejo Ruta N</a>, Calle 67 Nº 52-20, which is easily accessible by <a href="http://www.uber.com">uber</a>, taxi (you can use <a href="http://www.easytaxi.com/co/">Easy taxi</a>, <a href="https://tappsi.co/">Tappsi</a> or <a href="https://citytaxiapp.co/">CityTaxi</a>), bus and a 5 minute walk away from Universidad Metro station.
+
+<iframe width="95%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=-75.57201147079469%2C6.261219950302059%2C-75.56096076965333%2C6.268034737657311&amp;layer=mapnik&amp;marker=6.2646273551021165%2C-75.566486120224" style="border: 1px solid black"></iframe><br/><small><a href="http://www.openstreetmap.org/?mlat=6.26463&amp;mlon=-75.56649#map=17/6.26463/-75.56649">See the map bigger</a></small>
 
 **Hotels**</br>
 
@@ -54,14 +56,14 @@ Medellín es la segunda ciudad más grande de Colombia. Tiene más de 3 millones
 
 **Aeropuertos**</br>
 
-Medellín tiene dos aeropuertos principales - el Aeropuerto Internacional Jose Maria Cordova (<a href="https://goo.gl/maps/nFGmaWQ5MoP2">mapa</a>) y el Aeropuerto Enrique Olaya Herrera (<a href="https://goo.gl/maps/EbnZTxBzckn">mapa</a>).
-El aeropuerto internacional (Jose Maria Cordova) está ubicado a 29km de Medellin, en Rionegro, a 45 minutos por una carretera sinuosa.
-El aeropuerto local (Enrique Olaya Herrera) está ubicado dentro de la ciudad aunque solo vuelos regionales aterrizan o despegan desde allí.
+Medellín tiene dos aeropuertos principales:
+* El aeropuerto internacional (Jose Maria Cordova) (<a href="https://goo.gl/maps/nFGmaWQ5MoP2">mapa</a>) está ubicado a 29km de Medellin, en Rionegro, a 45 minutos por una carretera sinuosa.
+* El aeropuerto local (Enrique Olaya Herrera) (<a href="https://goo.gl/maps/EbnZTxBzckn">mapa</a>) está ubicado dentro de la ciudad aunque solo vuelos regionales aterrizan o despegan desde allí.
 
 **Ir del aeropuerto Jose María Cordova a al ciudad**</br>
 
-Taxis - Afuera de la salida del aeropuerto verás taxis blancos con azul. Aunque los taxis en Medellín usan taximetro, la tarifa desde el aeropuerto es fija y cuesta $70.000COP (aprox. $28 USD) o un poco más dependiendo del lugar de la ciudad al que te dirijas. Sin embargo para estar seguro, acuerda el precio con el conductor antes de tomar el taxi.
-Colectivos (buses pequeños) - Estos son taxis compartidos o mini-buses ubicados justo afuera de la salida del aeropuerto. El precio del colectivos es de $15.000 COP por persona desde el aeropuerto hasta El Poblado.
+* Taxis - Afuera de la salida del aeropuerto verás taxis blancos con azul. Aunque los taxis en Medellín usan taximetro, la tarifa desde el aeropuerto es fija y cuesta $70.000COP (aprox. $28 USD) o un poco más dependiendo del lugar de la ciudad al que te dirijas. Sin embargo para estar seguro, acuerda el precio con el conductor antes de tomar el taxi.
+* Colectivos (buses pequeños) - Estos son taxis compartidos o mini-buses ubicados justo afuera de la salida del aeropuerto. El precio del colectivos es de $15.000 COP por persona desde el aeropuerto hasta El Poblado.
 Nota: Los colectivos no te llevarán directamente a tu destino. Te dejarán en frente del centro comercial San Diego. Te sugerimos tomar un taxi desde este punto hasta tu destino.
 
 **Moverse en la cuidad**</br>
@@ -89,8 +91,10 @@ Los cafés y espacios de co-working spaces ubicados en el área del Poblado que 
 
 **Lugar del evento**</br>
 
-La conferencia se realizará en el <a href="http://www.rutanmedellin.org/es/">Complejo Ruta N</a>, Calle 67 Nº 52-20 (<a href="http://scaleconfco.com#venue">mira el mapa</a>) al cual se puede llegar fácilmente en <a href="http://www.uber.com">uber</a>, taxi (puedes usar <a href="http://www.easytaxi.com/co/">Easy taxi</a>, <a href="https://tappsi.co/">Tappsi</a> o <a href="https://citytaxiapp.co/">CityTaxi</a>), bus o 5 minutos caminando desde la estación Universidad del sistema Metro.
+La conferencia se realizará en el <a href="http://www.rutanmedellin.org/es/">Complejo Ruta N</a>, Calle 67 Nº 52-20, al cual se puede llegar fácilmente en <a href="http://www.uber.com">uber</a>, taxi (puedes usar <a href="http://www.easytaxi.com/co/">Easy taxi</a>, <a href="https://tappsi.co/">Tappsi</a> o <a href="https://citytaxiapp.co/">CityTaxi</a>), bus o 5 minutos caminando desde la estación Universidad del sistema Metro.
 Hay varios restaurantes que hacen parte del complejo Ruta N o quedan muy cerca caminando donde podrás almorzar.
+
+<iframe width="95%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=-75.57201147079469%2C6.261219950302059%2C-75.56096076965333%2C6.268034737657311&amp;layer=mapnik&amp;marker=6.2646273551021165%2C-75.566486120224" style="border: 1px solid black"></iframe><br/><small><a href="http://www.openstreetmap.org/?mlat=6.26463&amp;mlon=-75.56649#map=17/6.26463/-75.56649">Ver mapa más grande</a></small>
 
 **Hoteles**</br>
 
