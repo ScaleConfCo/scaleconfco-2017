@@ -32,6 +32,12 @@ const data = {
   'TODO1': {
     info: 'TODO1 es una compañía líder en la creación, implementación y operación de soluciones digitales omnicanal, para compañías del sector financiero y del ecosistema de negocio FINTECH.',
     url: 'http://www.todo1services.com/'
+  },
+  'yuxiglobal': {
+    info: 'Yuxi Global is a software services and products company with offices in the US and Colombia. We help our customers visualize, build and manage the digital solutions they need to conquer their businesses.',
+    facebook: 'yuxipacific',
+    twitter: 'yuxiglobal',
+    url: 'http://yuxiglobal.com/'
   }
 }
 
@@ -125,6 +131,7 @@ export default class Sponsors extends React.Component {
             <img src={require('../../src/assets/images/sponsors/komet.png')} alt="Komet Sales" className="w-100-l pointer" onClick={this.showModal.bind(this, 'komet')}/>
             <img src={require('../../src/assets/images/sponsors/logo-s4n-blanco-fondo-transparente.png')} alt="S4N" className="w-100-l pointer" onClick={this.showModal.bind(this, 'S4N')}/>
             <img src={require('../../src/assets/images/sponsors/todo1.png')} alt="TODO1" className="w-100-l pointer" onClick={this.showModal.bind(this, 'TODO1')}/>
+            <img src={require('../../src/assets/images/sponsors/yuxiglobal.png')} alt="yuxiglobal" className="w-100-l pointer" onClick={this.showModal.bind(this, 'yuxiglobal')}/>
           </div>
         </div>
         <Modal
