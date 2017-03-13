@@ -2,7 +2,7 @@
 name: Carmen Hernández
 company: Travis CI
 role: Infrastructure Engineer
-twitter: caelestisca
+twitter: carmatrocity
 website: https://github.com/Lyoness
 photo: carmen.png
 speaker: yes
