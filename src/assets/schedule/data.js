@@ -38,7 +38,7 @@ export default {
     {
       hour: "2:30 PM",
       rooms: {
-        'caelestisca': {
+        'carmatrocity': {
           title: "Cloud Native: from `git push` to merge to deploy",
         },
         'serargz': {
@@ -102,7 +102,7 @@ export default {
     {
       hour: "2:25 PM",
       title: "Mastery at Scale",
-      speaker: "caelestisca",
+      speaker: "carmatrocity",
       description: "How can we become masters within this rapidly-changing and ever-moving industry? This talk addresses expertness and proficiency at scale by looking at the universal truths of mastery we've seen throughout history. (Notes: The talk's structure will include fundamental truths of Mastery from the micro to the meta, and will flow from 1)mastery of Self, to 2)mastery within our companies and organizations, to finally 3) mastery in industry as Software and Operations Engineers. )"
     },
     {
