@@ -115,7 +115,7 @@ export default class Sponsors extends React.Component {
         <div className="flex justify-around flex-column items-center tc mt5">
           <div className="w-50-l">
             <p className="open-sans bright-green f-30 mb1 bb-bright-green">Platinum</p>
-            <img src={require('../../src/assets/images/sponsors/bizagi.png')} alt="Bizagi" className="w-100-l bg-white pointer" onClick={this.showModal.bind(this, 'bizagi')} />
+            <img src={require('../../src/assets/images/sponsors/logo-bizagi.png')} alt="Bizagi" className="w-100-l pointer" onClick={this.showModal.bind(this, 'bizagi')} />
           </div>
           <div className="w-40-l">
             <p className="open-sans bright-green f-30 mb1 bb-bright-green">Gold</p>
