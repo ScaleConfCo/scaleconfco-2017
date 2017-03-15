@@ -128,7 +128,7 @@ export default {
       description: "In the real world it is a luxury to be able start configuration management of services from scratch. Much more difficult, and unfortunately much more common, is the need to turn existing production environments from 'pets' to 'cattle'. Because 'pets' are by definition harder to predict and cannot be easily duplicated, changing them into cattle can be quite challenging and a resource hog."
     },
     {
-      hour: "4:30 PM",
+      hour: "4:40 PM",
       title: "Introduction to Search Systems",
       speaker: "scarletdrive",
       description: "Often when a new user arrives on your website, the first place they go to find information is the search box! Whether they are searching for hotels on your travel site, products on your e-commerce site, or friends to connect with on your social media site, it is important to have fast, effective search in order to engage the user."
@@ -148,8 +148,12 @@ export default {
       title: "End"
     },
     {
+      hour: "6:20",
+      title: "Free bus transportation departs venue to closing event"
+    },
+    {
       hour: "7:00 PM",
-      title: "Closing event"
+      title: "Closing event at La Casa del Frente, Cra. 35 #8a-45, El Poblado (bring your badge)"
     }
   ]
 }
