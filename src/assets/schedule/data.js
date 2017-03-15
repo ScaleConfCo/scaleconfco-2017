@@ -11,6 +11,11 @@ export default {
         'mongrelion': {
           title: "Manejar infraestructura en Google Cloud con Terraform",
           description: "Este taller está dirigido para todos aquellos que han oído hablar sobre Terraform pero no han tenido aún la oportunidad de experimentar con la herramienta. En este espacio de una hora y media hablaremos sobre qué es Terraform, para qué casos aplica mejor, casos de uso comunes y pondremos en práctica la teoría básica de Terraform para crear múltiples ambientes en Google Cloud. Es necesario tener experiencia en Unix y entendimiento básico de tecnologías PaaS como AWS, Digital Ocean, Linode y/o Google Cloud."
+        },
+        'candtoro': {
+          title: "Starting with Apache Kafka",
+          description: "Kafka is being considered the backbone for modern architectures because it combines the benefits of event logs with the benefits of message queues. In this workshop, we will look the fundamentals of the technology, use the Java API for producing and consuming messages and explore Avro for data serialization and schema evolution."
+
         }
       }
     },
@@ -40,6 +45,7 @@ export default {
       rooms: {
         'carmatrocity': {
           title: "Cloud Native: from `git push` to merge to deploy",
+          description: "The Building Blocks of Building, Shipping and Maintaining Software in the Cloud."
         },
         'serargz': {
           title: "Create your first decentralized application with Ethereum",
@@ -55,13 +61,13 @@ export default {
     },
     {
       hour: "9:15 AM",
-      title: "Opening words"
+      title: "Opening words & Raffle"
     },
     {
       hour: "9:35 AM",
-      title: "Building Bridges with Effective Devops",
-      speaker: "beerops",
-      description: "Devops originally started as a way of enabling both developers and operations engineers to work better together, but over the years since its inception it's become much more than that. The principles of devops can be beneficial to everyone involved in creating software solutions, not just two teams. This talk will discuss practical ideas for how the four pillars of effective devops can be used throughout an organization, and the benefits of spreading operational thinking further than just the ops team."
+      title: "What is Devops",
+      speaker: "armon",
+      description: "Most startups are in a race, either against competitors or burn rates to deliver products. This demands an increased focus on agility of delivery, which is a perfect fit for DevOps. In this talk, we discuss what DevOps is, and how it affects the people, processes, and tools used to deliver an app. Specifically, we discuss DevOps as a process for delivering software, and optimizing for agility instead of risk. DevOps applies to startups as well as Fortune 500's, and we will cover some pragmatic ways to get started and add value without getting caught up with all the shiny new tools."
     },
     {
       hour: "10:10 AM",
@@ -100,44 +106,54 @@ export default {
       title: "Lunch"
     },
     {
-      hour: "2:25 PM",
+      hour: "2:30 PM",
       title: "Mastery at Scale",
       speaker: "carmatrocity",
-      description: "How can we become masters within this rapidly-changing and ever-moving industry? This talk addresses expertness and proficiency at scale by looking at the universal truths of mastery we've seen throughout history. (Notes: The talk's structure will include fundamental truths of Mastery from the micro to the meta, and will flow from 1)mastery of Self, to 2)mastery within our companies and organizations, to finally 3) mastery in industry as Software and Operations Engineers. )"
+      description: "How can we become masters within this rapidly-changing and ever-moving industry? This talk addresses expertness and proficiency at scale by looking at the universal truths of mastery we've seen throughout history. (Notes: The talk's structure will include fundamental truths of Mastery from the micro to the meta, and will flow from 1) mastery of Self, to 2) mastery within our companies and organizations, to finally 3) mastery in industry as Software and Operations Engineers.)"
     },
     {
-      hour: "3:00 PM",
+      hour: "3:10 PM",
       title: "Distributed computing with Ethereum and IPFS",
       speaker: "serargz",
-      description: "Internet has evolved in different and sometimes unexpected ways since its inception. Also, we have seen changes in the infrastructure that supports the web and how we use it, from static data centers, to cloud computing and decentralized systems. Distributed computing, on the other hand, is often associated with academy or research projects, with low potential to be used on production. However, the raise of distributed systems like BitTorrent, Git and Bitcoin is opening a new path for *real* distributed computing for everyone. "
+      description: "Internet has evolved in different and sometimes unexpected ways since its inception. Also, we have seen changes in the infrastructure that supports the web and how we use it, from static data centers, to cloud computing and decentralized systems. Distributed computing, on the other hand, is often associated with academy or research projects, with low potential to be used on production. However, the raise of distributed systems like BitTorrent, Git and Bitcoin is opening a new path for *real* distributed computing for everyone."
     },
     {
-      hour: "3:35 PM",
+      hour: "3:45 PM",
       title: "Break"
     },
     {
-      hour: "3:55 PM",
+      hour: "4:05 PM",
       title: "Configuration Management for Legacy Services at Scale",
       speaker: "sllylhmn",
       description: "In the real world it is a luxury to be able start configuration management of services from scratch. Much more difficult, and unfortunately much more common, is the need to turn existing production environments from 'pets' to 'cattle'. Because 'pets' are by definition harder to predict and cannot be easily duplicated, changing them into cattle can be quite challenging and a resource hog."
     },
     {
-      hour: "4:30 PM",
-      title: "What is DevOps",
-      speaker: "armon",
-      description: "Most startups are in a race, either against competitors or burn rates to deliver products. This demands an increased focus on agility of delivery, which is a perfect fit for DevOps. In this talk, we discuss what DevOps is, and how it affects the people, processes, and tools used to deliver an app. Specifically, we discuss DevOps as a process for delivering software, and optimizing for agility instead of risk. DevOps applies to startups as well as Fortune 500's, and we will cover some pragmatic ways to get started and add value without getting caught up with all the shiny new tools."
+      hour: "4:40 PM",
+      title: "Introduction to Search Systems",
+      speaker: "scarletdrive",
+      description: "Often when a new user arrives on your website, the first place they go to find information is the search box! Whether they are searching for hotels on your travel site, products on your e-commerce site, or friends to connect with on your social media site, it is important to have fast, effective search in order to engage the user."
     },
     {
-      hour: "5:40 PM",
-      title: "Closing remarks"
+      hour: "5:15 PM",
+      title: "Building Bridges with Effective Devops",
+      speaker: "beerops",
+      description: "Devops originally started as a way of enabling both developers and operations engineers to work better together, but over the years since its inception itâ€™s become much more than that. The principles of devops can be beneficial to everyone involved in creating software solutions, not just two teams. This talk will discuss practical ideas for how the four pillars of effective devops can be used throughout an organization, and the benefits of spreading operational thinking further than just the ops team."
     },
     {
       hour: "5:50 PM",
+      title: "Closing remarks & Raffle"
+    },
+    {
+      hour: "6:05 PM",
       title: "End"
     },
     {
+      hour: "6:20",
+      title: "Free bus transportation departs venue to closing event"
+    },
+    {
       hour: "7:00 PM",
-      title: "Closing event"
+      title: "Closing event at La Casa del Frente, Cra. 35 #8a-45, El Poblado (bring your badge)"
     }
   ]
 }
