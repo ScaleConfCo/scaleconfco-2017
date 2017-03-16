@@ -44,7 +44,7 @@ export default {
       hour: "2:30 PM",
       rooms: {
         'carmatrocity': {
-          title: "Cloud Native: from `git push` to merge to deploy",
+          title: "Cloud Native for Beginners",
           description: "The Building Blocks of Building, Shipping and Maintaining Software in the Cloud."
         },
         'serargz': {
