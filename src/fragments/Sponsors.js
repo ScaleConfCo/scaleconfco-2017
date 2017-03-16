@@ -38,6 +38,12 @@ const data = {
     facebook: 'yuxipacific',
     twitter: 'yuxiglobal',
     url: 'http://yuxiglobal.com/'
+  },
+  'ubidots': {
+    info: 'Ubidots is a codeless IoT Platform designed to help you prototype and scale your IoT projects to production',
+    facebook: 'ubidots',
+    twitter: 'ubidots',
+    url: 'https://ubidots.com/'
   }
 }
 
@@ -132,6 +138,7 @@ export default class Sponsors extends React.Component {
             <img src={require('../../src/assets/images/sponsors/logo-s4n-blanco-fondo-transparente.png')} alt="S4N" className="w-100-l pointer" onClick={this.showModal.bind(this, 'S4N')}/>
             <img src={require('../../src/assets/images/sponsors/todo1.png')} alt="TODO1" className="w-100-l pointer" onClick={this.showModal.bind(this, 'TODO1')}/>
             <img src={require('../../src/assets/images/sponsors/yuxiglobal.png')} alt="Yuxi Global" className="w-100-l pointer" onClick={this.showModal.bind(this, 'yuxiglobal')}/>
+            <img src={require('../../src/assets/images/sponsors/ubidots.png')} alt="Ubidots" className="w-100-l pointer" onClick={this.showModal.bind(this, 'ubidots')}/>
           </div>
         </div>
         <Modal
