@@ -1,5 +1,5 @@
 ---
-name: Carmen Hernández
+name: Carmen Andoh
 company: Travis CI
 role: Infrastructure Engineer
 twitter: carmatrocity
