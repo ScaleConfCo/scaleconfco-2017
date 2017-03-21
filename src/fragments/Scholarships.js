@@ -21,13 +21,14 @@ const Scholarships = () => {
           group in technology and is looking for an
           opportunity to grow.
         </p>
-        <a href="https://scaleconfcolombia.typeform.com/to/OFYCec" className="btn btn--coc center bg-blue white">
+        <p className="ttu eau-book mb1 f4 mv4-l">Thank you for your interest in the event but we have closed the applications.</p>
+        <div className="btn btn--coc center bg-gray white">
           Apply
-        </a>
+        </div>
         <br/>
-        <a href="https://donorbox.org/scaleconf-colombia-s-diversity-program" className="btn btn--coc center bg-blue white">
+        <div className="btn btn--coc center bg-gray white">
           Sponsor diversity ticket(s)
-        </a>
+        </div>
       </div>
       <img src={require('../../src/assets/images/diversity.png')} alt="ScaleConf Colombia Scholarships" className="w-100 w-40-l dib-l scholarships__image"/>
     </div>

@@ -44,6 +44,12 @@ const data = {
     facebook: 'ubidots',
     twitter: 'ubidots',
     url: 'https://ubidots.com/'
+  },
+  'twilio': {
+    info: 'Twilio powers the future of business communications. Enabling phones, VoIP, and messaging to be embedded into web, desktop, and mobile software.',
+    facebook: 'TeamTwilio',
+    twitter: 'twilio',
+    url: 'https://www.twilio.com/'
   }
 }
 
@@ -139,6 +145,7 @@ export default class Sponsors extends React.Component {
             <img src={require('../../src/assets/images/sponsors/todo1.png')} alt="TODO1" className="w-100-l pointer" onClick={this.showModal.bind(this, 'TODO1')}/>
             <img src={require('../../src/assets/images/sponsors/yuxiglobal.png')} alt="Yuxi Global" className="w-100-l pointer" onClick={this.showModal.bind(this, 'yuxiglobal')}/>
             <img src={require('../../src/assets/images/sponsors/ubidots.png')} alt="Ubidots" className="w-100-l pointer" onClick={this.showModal.bind(this, 'ubidots')}/>
+            <img src={require('../../src/assets/images/sponsors/twilio-logo-white.png')} alt="Twilio" className="w-100-l pointer" onClick={this.showModal.bind(this, 'twilio')}/>
           </div>
         </div>
         <Modal
