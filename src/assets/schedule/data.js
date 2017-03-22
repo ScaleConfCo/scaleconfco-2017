@@ -52,6 +52,15 @@ export default {
           description: "We’re going to create a private Ethereum network and build a distributed application (dapp) on top of it. The main goal is to understand what dapps are, how they work on Ethereum and how to use them. Finally we'll publish a fully functional dapp in the Ethereum production network!"
         }
       }
+    },
+    {
+      hour: "4:15 PM",
+      rooms: {
+        'camiloahm': {
+          title: "Deploying microservices to the cloud [Repetition]",
+          description: "In this workshop, you will deploy a functional “Cloud native application” based on microservices, using, Docker containers, Azure, AWS, Google App Engine, Kubernetes and DCOS. Containers are easy for someone who spends significant amount of time immersed in operations work. But for most of the people, getting start with this stuff turned out to be hard. Participants will learn about a number of concepts and tools in this workshop to build and deploy containers to the cloud."
+        }
+      }
     }
   ],
   "dayTwo": [
