@@ -3,11 +3,11 @@ import ReadMore from '../components/ReadMore'
 import enhanceCollection from "phenomic/lib/enhance-collection"
 import ScheduleData from '../assets/schedule/data'
 
-const TimelineRoom = ({ room, index }) => {
+const TimelineRoom = ({ room, name }) => {
   const { title, speaker, description } = room
   return (
     <div>
-      <p className="ml4 white open-sans mt4">Room {index}</p>
+      <p className="ml4 white open-sans mt4">Room {name}</p>
       <p className="ml4 bright-green ttu eau-book f-4">{title}</p>
       {
         speaker &&
@@ -27,7 +27,8 @@ const TimelineRoom = ({ room, index }) => {
 
 TimelineRoom.propTypes = {
   room: PropTypes.object.isRequired,
-  index: PropTypes.number.isRequired
+  index: PropTypes.number.isRequired,
+  name: PropTypes.object.isRequired
 }
 
 
@@ -43,7 +44,7 @@ const TimelineItem = ({ item }) => {
       }
       {
         rooms ?
-        rooms.map((room, i) => <TimelineRoom room={room} index={i} key={i} />)
+        rooms.map((room, i) => i == 0 ? <TimelineRoom room={room} index={i} key={i} name={'Margaret Hamilton'}/> : <TimelineRoom room={room} index={i} key={i} name={'Alan Turing'}/>)
         : (
             <div>
               <p className="ml4 bright-green ttu eau-book f-4">{title}</p>
