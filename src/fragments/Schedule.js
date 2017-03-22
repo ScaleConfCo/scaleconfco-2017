@@ -27,7 +27,6 @@ const TimelineRoom = ({ room, name }) => {
 
 TimelineRoom.propTypes = {
   room: PropTypes.object.isRequired,
-  index: PropTypes.number.isRequired,
   name: PropTypes.object.isRequired
 }
 
@@ -44,7 +43,7 @@ const TimelineItem = ({ item }) => {
       }
       {
         rooms ?
-        rooms.map((room, i) => i == 0 ? <TimelineRoom room={room} index={i} key={i} name={'Margaret Hamilton'}/> : <TimelineRoom room={room} index={i} key={i} name={'Alan Turing'}/>)
+        rooms.map((room, i) => i == 0 ? <TimelineRoom room={room} key={i} name={'Margaret Hamilton'}/> : <TimelineRoom room={room} key={i} name={'Alan Turing'}/>)
         : (
             <div>
               <p className="ml4 bright-green ttu eau-book f-4">{title}</p>
