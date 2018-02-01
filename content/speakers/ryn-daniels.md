@@ -3,7 +3,7 @@ name: Ryn Daniels
 company: Etsy
 role: Sr. Operations Engineer
 website: https://beero.ps/
-twitter: beerops
+twitter: rynchantress
 photo: ryn.png
 speaker: yes
 ---
